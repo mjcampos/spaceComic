@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://6hq7b1xlgyl7"]
+[gd_scene load_steps=14 format=3 uid="uid://6hq7b1xlgyl7"]
 
 [ext_resource type="Script" path="res://main/main_game.gd" id="1_j21gb"]
 [ext_resource type="FontFile" uid="uid://br1u4dxauauu6" path="res://ui/fonts/Kenney Pixel.ttf" id="1_ril5v"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dqna524hc6h6d" path="res://assets/panels/p5.png" id="8_ci811"]
 [ext_resource type="StyleBox" uid="uid://j4ctwlqgumi" path="res://ui/text_normal.tres" id="9_mypy3"]
 [ext_resource type="Texture2D" uid="uid://oh8wk3v5wpvm" path="res://assets/panels/p6.png" id="9_nsp3w"]
+[ext_resource type="PackedScene" uid="uid://dexcjud8rqlu8" path="res://main/decision.tscn" id="10_s4yn8"]
 
 [sub_resource type="Animation" id="Animation_j13ll"]
 resource_name = "page_1"
@@ -313,6 +314,24 @@ text = "Move, you stupid idots,
  get the FUCK out!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Decision1" parent="Comic" instance=ExtResource("10_s4yn8")]
+offset_left = 23.0
+offset_top = 51.0
+offset_right = 23.0
+offset_bottom = 51.0
+
+[node name="Decision2" parent="Comic" instance=ExtResource("10_s4yn8")]
+offset_left = 480.0
+offset_top = 353.0
+offset_right = 480.0
+offset_bottom = 353.0
+
+[node name="Decision3" parent="Comic" instance=ExtResource("10_s4yn8")]
+offset_left = 84.0
+offset_top = 688.0
+offset_right = 84.0
+offset_bottom = 688.0
 
 [connection signal="pressed" from="UI/MenuBar/BtnEnter" to="." method="_on_btn_enter_pressed"]
 [connection signal="pressed" from="UI/MenuBar/BtnRepeat" to="." method="_on_btn_repeat_pressed"]
