@@ -1,0 +1,104 @@
+[gd_scene load_steps=8 format=3 uid="uid://dexcjud8rqlu8"]
+
+[ext_resource type="Script" path="res://main/decision.gd" id="1_6ml5l"]
+[ext_resource type="FontFile" uid="uid://br1u4dxauauu6" path="res://ui/fonts/Kenney Pixel.ttf" id="1_sb70k"]
+[ext_resource type="Texture2D" uid="uid://bj3rcq12k6tgp" path="res://ui/textures/normal_bub.png" id="2_wrdm6"]
+[ext_resource type="Texture2D" uid="uid://41ruf5v8jjkt" path="res://ui/textures/whisper_bub.png" id="3_m8q56"]
+[ext_resource type="Texture2D" uid="uid://bcxvqgnuck6c0" path="res://ui/textures/yell_bub.png" id="4_6i56a"]
+
+[sub_resource type="Gradient" id="Gradient_wy3t6"]
+offsets = PackedFloat32Array(0.9, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ej4am"]
+gradient = SubResource("Gradient_wy3t6")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+metadata/_snap_enabled = true
+
+[node name="Decision" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6ml5l")
+tone_list = Array[Texture]([ExtResource("2_wrdm6"), ExtResource("3_m8q56"), ExtResource("4_6i56a")])
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -75.0
+offset_right = 159.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="Spacer1" type="Control" parent="GridContainer"]
+layout_mode = 2
+
+[node name="BtnUp" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("1_sb70k")
+theme_override_font_sizes/font_size = 32
+text = "<W>"
+
+[node name="Spacer2" type="Control" parent="GridContainer"]
+layout_mode = 2
+
+[node name="BtnLeft" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_sb70k")
+theme_override_font_sizes/font_size = 32
+text = "<A>"
+
+[node name="TextBubble" type="MarginContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Bubble" type="TextureRect" parent="GridContainer/TextBubble"]
+layout_mode = 2
+texture = SubResource("GradientTexture2D_ej4am")
+
+[node name="Text" type="Label" parent="GridContainer/TextBubble"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_sb70k")
+theme_override_font_sizes/font_size = 32
+text = "Text goes here.
+Change words with A/D.
+Change tone with W/S."
+horizontal_alignment = 1
+
+[node name="BtnRight" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_sb70k")
+theme_override_font_sizes/font_size = 32
+text = "<D>"
+
+[node name="Spacer3" type="Control" parent="GridContainer"]
+layout_mode = 2
+
+[node name="BtnDown" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("1_sb70k")
+theme_override_font_sizes/font_size = 32
+text = "<S>"
+
+[node name="Spacer4" type="Control" parent="GridContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="GridContainer/BtnUp" to="." method="_on_btn_up_pressed"]
+[connection signal="pressed" from="GridContainer/BtnLeft" to="." method="_on_btn_left_pressed"]
+[connection signal="pressed" from="GridContainer/BtnRight" to="." method="_on_btn_right_pressed"]
+[connection signal="pressed" from="GridContainer/BtnDown" to="." method="_on_btn_down_pressed"]

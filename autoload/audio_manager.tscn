@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://du1qymmg85vp6"]
+
+[ext_resource type="Script" path="res://autoload/audio_manager.gd" id="1_2qak2"]
+[ext_resource type="AudioStream" uid="uid://mdrp02slsxb3" path="res://Audio/SFX/NAVIC_SFX_UITone_Excited3.wav" id="2_cqwdl"]
+[ext_resource type="AudioStream" uid="uid://cflaw0jabpneo" path="res://Audio/SFX/NAVIC_SFX_UITone_Talk3.wav" id="3_0ovgo"]
+[ext_resource type="AudioStream" uid="uid://b5ddnk4tpcper" path="res://Audio/SFX/NAVIC_SFX_UITone_Thinking3.wav" id="4_667h6"]
+[ext_resource type="AudioStream" uid="uid://bcemy7gk54jin" path="res://Audio/SFX/NAVIC_SFX_UITone_Whisper3.wav" id="5_qdfin"]
+[ext_resource type="AudioStream" uid="uid://cme1j6ry6w4ms" path="res://Audio/SFX/NAVIC_SFX_UITone_Yell3.wav" id="6_qpnpb"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_2qak2")
+
+[node name="SFX_UITONE_Excited" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_cqwdl")
+bus = &"SFX"
+
+[node name="SFX_UITONE_Talking" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0ovgo")
+bus = &"SFX"
+
+[node name="SFX_UITONE_Thinking" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_667h6")
+bus = &"SFX"
+
+[node name="SFX_UITONE_Whisper" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_qdfin")
+bus = &"SFX"
+
+[node name="SFX_UITONE_Yelling" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_qpnpb")
+bus = &"SFX"
