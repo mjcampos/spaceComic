@@ -2,18 +2,18 @@ extends Control
 
 @onready var panel_queue = [
 	$Panels/P1,
-	$Panels/Label,
+	$Panels/T1,
 	$Panels/P2,
-	$Panels/Label2,
+	$Panels/T2,
 	$Panels/P3,
-	$Panels/Label3,
+	$Panels/T3,
 	"half",
 	$Panels/P4,
-	$Panels/Label4,
+	$Panels/T4,
 	$Panels/P5,
-	$Panels/Label5,
+	$Panels/T5,
 	$Panels/P6,
-	$Panels/Label6,
+	$Panels/T6,
 ]
 var panel_index : int = 0
 var page_finished : bool = false
