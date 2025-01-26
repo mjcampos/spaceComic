@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://du1qymmg85vp6"]
+[gd_scene load_steps=15 format=3 uid="uid://du1qymmg85vp6"]
 
 [ext_resource type="Script" path="res://autoload/audio_manager.gd" id="1_2qak2"]
 [ext_resource type="AudioStream" uid="uid://mdrp02slsxb3" path="res://Audio/SFX/NAVIC_SFX_UITone_Excited3.wav" id="2_cqwdl"]
@@ -6,6 +6,14 @@
 [ext_resource type="AudioStream" uid="uid://b5ddnk4tpcper" path="res://Audio/SFX/NAVIC_SFX_UITone_Thinking3.wav" id="4_667h6"]
 [ext_resource type="AudioStream" uid="uid://bcemy7gk54jin" path="res://Audio/SFX/NAVIC_SFX_UITone_Whisper3.wav" id="5_qdfin"]
 [ext_resource type="AudioStream" uid="uid://cme1j6ry6w4ms" path="res://Audio/SFX/NAVIC_SFX_UITone_Yell3.wav" id="6_qpnpb"]
+[ext_resource type="AudioStream" uid="uid://dw5w2et1tvq86" path="res://Audio/SFX/NAVIC_SFX_UI_BoopLeft.wav" id="7_swojr"]
+[ext_resource type="AudioStream" uid="uid://uh6b0jkpbu0h" path="res://Audio/SFX/NAVIC_SFX_UI_BoopRight.wav" id="8_6lric"]
+[ext_resource type="AudioStream" uid="uid://dy6lg43xnipd3" path="res://Audio/SFX/NAVIC_SFX_Chime_Penelope.wav" id="9_xlaol"]
+[ext_resource type="AudioStream" uid="uid://b25xucwsswhnc" path="res://Audio/SFX/NAVIC_SFX_Chime_Trista.wav" id="10_r82ln"]
+[ext_resource type="AudioStream" uid="uid://bg3at65o5h5ta" path="res://Audio/Music/NAVIC_Music_AmbientTheme_1.mp3" id="11_b7ii2"]
+[ext_resource type="AudioStream" uid="uid://e5o08yp0mup8" path="res://Audio/Music/NAVIC_Music_AmbientTheme_2.mp3" id="12_atvfp"]
+[ext_resource type="AudioStream" uid="uid://bticm6w3urjdn" path="res://Audio/Music/NAVIC_Music_AmbientTheme_3.mp3" id="13_tx21p"]
+[ext_resource type="AudioStream" uid="uid://b4iqpsj713b0r" path="res://Audio/Music/NAVIC_Music_AmbientTheme_4.mp3" id="14_bsqet"]
 
 [node name="AudioManager" type="Node"]
 script = ExtResource("1_2qak2")
@@ -29,3 +37,36 @@ bus = &"SFX"
 [node name="SFX_UITONE_Yelling" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_qpnpb")
 bus = &"SFX"
+
+[node name="SFX_UITONE_BoopLeft" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_swojr")
+bus = &"UI"
+
+[node name="SFX_UITONE_BoopRight" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_6lric")
+bus = &"UI"
+
+[node name="SFX_UITONE_Chime_Penny" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_xlaol")
+bus = &"SFX"
+
+[node name="SFX_UITONE_Chime_Trista" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_r82ln")
+bus = &"SFX"
+
+[node name="Music_AmbientTheme_1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_b7ii2")
+bus = &"Music"
+
+[node name="Music_AmbientTheme_2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_atvfp")
+bus = &"Music"
+
+[node name="Music_AmbientTheme_3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_tx21p")
+autoplay = true
+bus = &"Music"
+
+[node name="Music_AmbientTheme_4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_bsqet")
+bus = &"Music"

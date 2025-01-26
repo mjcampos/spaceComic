@@ -58,7 +58,9 @@ func _on_btn_down_pressed():
 
 func _on_btn_left_pressed():
 	word_index -= 1
+	AudioManager.sfx_uitone_boop_left.play()
 
 
 func _on_btn_right_pressed():
 	word_index += 1
+	AudioManager.sfx_uitone_boop_right.play()
