@@ -1,0 +1,320 @@
+[gd_scene load_steps=13 format=3 uid="uid://6hq7b1xlgyl7"]
+
+[ext_resource type="Script" path="res://main/main_game.gd" id="1_j21gb"]
+[ext_resource type="FontFile" uid="uid://br1u4dxauauu6" path="res://ui/fonts/Kenney Pixel.ttf" id="1_ril5v"]
+[ext_resource type="Texture2D" uid="uid://dd4he354ypsuj" path="res://assets/panels/p1.png" id="4_0d2xd"]
+[ext_resource type="Texture2D" uid="uid://dj5iwemkry02y" path="res://assets/panels/p2.png" id="5_yq41o"]
+[ext_resource type="Texture2D" uid="uid://58vr2vo8c367" path="res://assets/panels/p3.png" id="6_hy3uk"]
+[ext_resource type="Texture2D" uid="uid://bnaxr56m0rwl1" path="res://assets/panels/p4.png" id="7_gfegp"]
+[ext_resource type="Texture2D" uid="uid://dqna524hc6h6d" path="res://assets/panels/p5.png" id="8_ci811"]
+[ext_resource type="StyleBox" uid="uid://j4ctwlqgumi" path="res://ui/text_normal.tres" id="9_mypy3"]
+[ext_resource type="Texture2D" uid="uid://oh8wk3v5wpvm" path="res://assets/panels/p6.png" id="9_nsp3w"]
+
+[sub_resource type="Animation" id="Animation_j13ll"]
+resource_name = "page_1"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("P1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("P2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("P3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Label2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.5, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Label3:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(2.5, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gqm55"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("P1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("P2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("P3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Label2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Label3:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3ybke"]
+_data = {
+"RESET": SubResource("Animation_gqm55"),
+"page_1": SubResource("Animation_j13ll")
+}
+
+[node name="MainGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j21gb")
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="MenuBar" type="HBoxContainer" parent="UI"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="BtnEnter" type="Button" parent="UI/MenuBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+text = "Enter Choice"
+
+[node name="BtnRepeat" type="Button" parent="UI/MenuBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+text = "Repeat VO"
+
+[node name="BtnUndo" type="Button" parent="UI/MenuBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+text = "Undo Choice"
+
+[node name="BtnNext" type="Button" parent="UI/MenuBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+text = "Next"
+
+[node name="Comic" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="Comic"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Anim" type="AnimationPlayer" parent="Comic"]
+libraries = {
+"": SubResource("AnimationLibrary_3ybke")
+}
+
+[node name="P1" type="Sprite2D" parent="Comic"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(182, 309)
+scale = Vector2(1.05938, 1.05938)
+texture = ExtResource("4_0d2xd")
+
+[node name="P2" type="Sprite2D" parent="Comic"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(648, 262)
+scale = Vector2(1.24437, 1.24437)
+texture = ExtResource("5_yq41o")
+
+[node name="P3" type="Sprite2D" parent="Comic"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(534, 561)
+texture = ExtResource("6_hy3uk")
+
+[node name="P4" type="Sprite2D" parent="Comic"]
+position = Vector2(1182, 275)
+texture = ExtResource("7_gfegp")
+
+[node name="P5" type="Sprite2D" parent="Comic"]
+position = Vector2(1646, 298)
+texture = ExtResource("8_ci811")
+
+[node name="P6" type="Sprite2D" parent="Comic"]
+position = Vector2(1431, 703)
+scale = Vector2(0.84, 0.84)
+texture = ExtResource("9_nsp3w")
+
+[node name="Label" type="Label" parent="Comic"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 52.0
+offset_top = 33.0
+offset_right = 332.0
+offset_bottom = 148.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = ExtResource("9_mypy3")
+text = "PORK CHOP 
+SANDWICHES!!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Comic"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 340.0
+offset_top = 301.0
+offset_right = 620.0
+offset_bottom = 416.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = ExtResource("9_mypy3")
+text = "Oh shit, 
+we're dead!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Comic"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 37.0
+offset_top = 609.0
+offset_right = 493.0
+offset_bottom = 724.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = ExtResource("9_mypy3")
+text = "Move, you stupid idots,
+ get the FUCK out!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="UI/MenuBar/BtnEnter" to="." method="_on_btn_enter_pressed"]
+[connection signal="pressed" from="UI/MenuBar/BtnRepeat" to="." method="_on_btn_repeat_pressed"]
+[connection signal="pressed" from="UI/MenuBar/BtnUndo" to="." method="_on_btn_undo_pressed"]
+[connection signal="pressed" from="UI/MenuBar/BtnNext" to="." method="_on_btn_next_pressed"]
