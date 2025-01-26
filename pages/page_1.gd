@@ -30,10 +30,12 @@ func _ready() -> void:
 
 func next_panel():
 	if panel_queue[panel_index] is String:
+		print("Panning camera...")
 		if panel_queue[panel_index] == "half":
 			half_finished.emit()
 			panel_index += 1
 	else:
+		print("Showing panel: %s" % panel_queue[panel_index].name)
 		panel_tween = create_tween()
 		panel_tween.tween_property(panel_queue[panel_index], "modulate", Color(1,1,1,1), 0.5)
 		panel_tween.tween_callback(_on_tween_finished)

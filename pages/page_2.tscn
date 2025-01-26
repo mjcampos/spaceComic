@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dstt6u8mqopaf"]
+[gd_scene load_steps=19 format=3 uid="uid://dstt6u8mqopaf"]
 
 [ext_resource type="Texture2D" uid="uid://bwfi1d2up7nkg" path="res://assets/panels/MilitaryMeet/MilitaryMeet_1.png" id="1_h6w0x"]
 [ext_resource type="Script" path="res://pages/page_2.gd" id="1_li6ct"]
@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://j5ow465fhr7y" path="res://assets/panels/MilitaryMeet/MilitaryMeet_5.png" id="5_2m6yb"]
 [ext_resource type="Texture2D" uid="uid://dh6wf6lqlpre6" path="res://assets/panels/MilitaryMeet/MilitaryMeet_6.png" id="6_syk21"]
 [ext_resource type="Texture2D" uid="uid://buyp57sbwqpc7" path="res://assets/panels/MilitaryMeet/MilitaryMeet_7.png" id="7_ps6ph"]
-[ext_resource type="PackedScene" uid="uid://dexcjud8rqlu8" path="res://main/decision.tscn" id="7_tfvyc"]
 [ext_resource type="Texture2D" uid="uid://bd0lyswbgqkog" path="res://assets/panels/MilitaryMeet/MilitaryMeet_1_text1.png" id="8_c31jw"]
 [ext_resource type="Texture2D" uid="uid://cn1f4apsda7jw" path="res://assets/panels/MilitaryMeet/MilitaryMeet_1_text2.png" id="9_1kd7g"]
 [ext_resource type="Texture2D" uid="uid://d3sundeldxxhg" path="res://assets/panels/MilitaryMeet/MilitaryMeet_5_text.png" id="10_dmmvv"]
@@ -71,13 +70,6 @@ texture = ExtResource("3_ie6un")
 position = Vector2(504, 680)
 scale = Vector2(0.4375, 0.4375)
 texture = ExtResource("14_fe6fj")
-
-[node name="Decision" parent="Panels" instance=ExtResource("7_tfvyc")]
-offset_left = 496.0
-offset_top = 668.0
-offset_right = 496.0
-offset_bottom = 668.0
-word_list = Array[String](["That idiot"])
 
 [node name="P5" type="Sprite2D" parent="Panels"]
 position = Vector2(1488, 272)

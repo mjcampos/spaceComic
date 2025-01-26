@@ -21,6 +21,7 @@ func pan_camera():
 
 func next_page():
 	if page_index < page_list.size()-1:
+		print("Moving to next page...")
 		var page_tween = create_tween()
 		page_tween.tween_property(page_list[page_index], "modulate", Color(1,1,1,0), 0.5)
 		page_tween.tween_property($Camera, "position", Vector2.ZERO, 0.1)
