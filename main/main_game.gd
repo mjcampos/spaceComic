@@ -1,25 +1,36 @@
 extends Control
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+@onready var page_list = $Pages.get_children()
+
+var page_index : int = 0
 
 
-func pan_camera(dir):
-	match dir:
-		"left":
-			var cam_tween = create_tween()
-			cam_tween.tween_property($Camera, "position", Vector2(960,0), 1.0)
-			cam_tween.play()
-		"right":
-			var cam_tween = create_tween()
-			cam_tween.tween_property($Camera, "position", Vector2(0,0), 1.0)
-			cam_tween.play()
+func _ready() -> void:
+	for page in page_list:
+		page.modulate = Color(1, 1, 1, 0)
+		page.half_finished.connect(pan_camera)
+	page_list[0].modulate = Color(1,1,1,1)
+
+
+func pan_camera():
+	var cam_tween = create_tween()
+	cam_tween.tween_property($Camera, "position", Vector2(960,0), 1.0)
+	cam_tween.play()
+
+
+func next_page():
+	if page_index < page_list.size()-1:
+		var page_tween = create_tween()
+		page_tween.parallel()
+		page_tween.tween_property(page_list[page_index], "modulate", Color(1,1,1,0), 1.0)
+		page_tween.tween_property(page_list[page_index+1], "modulate", Color(1,1,1,1), 1.0)
+		page_tween.play()
+		page_index += 1
 
 
 func _on_btn_enter_pressed():
-	$Comic/Anim.play("page_1")
+	pass
 
 
 func _on_btn_repeat_pressed():
@@ -31,4 +42,7 @@ func _on_btn_undo_pressed():
 
 
 func _on_btn_next_pressed():
-	pass # Replace with function body.
+	if !page_list[page_index].page_finished:
+		page_list[page_index].next_panel()
+	else:
+		next_page()
