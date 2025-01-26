@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://6hq7b1xlgyl7"]
+
+[ext_resource type="Script" path="res://main/main_game.gd" id="1_j21gb"]
+[ext_resource type="FontFile" uid="uid://br1u4dxauauu6" path="res://ui/fonts/Kenney Pixel.ttf" id="1_ril5v"]
+[ext_resource type="PackedScene" uid="uid://cw8de1i83h7br" path="res://pages/page_1.tscn" id="3_u35g2"]
+[ext_resource type="PackedScene" uid="uid://dstt6u8mqopaf" path="res://pages/page_2.tscn" id="4_lkdyi"]
+
+[node name="MainGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j21gb")
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="MenuBar" type="HBoxContainer" parent="UI"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="BtnEnter" type="Button" parent="UI/MenuBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+text = "Enter Choice"
+
+[node name="BtnRepeat" type="Button" parent="UI/MenuBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+text = "Repeat VO"
+
+[node name="BtnUndo" type="Button" parent="UI/MenuBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+text = "Undo Choice"
+
+[node name="BtnNext" type="Button" parent="UI/MenuBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ril5v")
+theme_override_font_sizes/font_size = 64
+text = "Next"
+
+[node name="Pages" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Page1" parent="Pages" instance=ExtResource("3_u35g2")]
+layout_mode = 1
+
+[node name="Page2" parent="Pages" instance=ExtResource("4_lkdyi")]
+layout_mode = 1
+
+[connection signal="pressed" from="UI/MenuBar/BtnEnter" to="." method="_on_btn_enter_pressed"]
+[connection signal="pressed" from="UI/MenuBar/BtnRepeat" to="." method="_on_btn_repeat_pressed"]
+[connection signal="pressed" from="UI/MenuBar/BtnUndo" to="." method="_on_btn_undo_pressed"]
+[connection signal="pressed" from="UI/MenuBar/BtnNext" to="." method="_on_btn_next_pressed"]

@@ -15,7 +15,6 @@ dest_files=["res://.godot/imported/Rajdhani-SemiBold.ttf-f64a382ca5f82404a219ccf
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
-disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48

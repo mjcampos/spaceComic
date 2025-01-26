@@ -15,7 +15,6 @@ dest_files=["res://.godot/imported/RX100-Regular.woff2-4a7936757974798a81406b7f2
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
-disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
