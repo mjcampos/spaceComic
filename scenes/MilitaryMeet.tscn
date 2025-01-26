@@ -107,9 +107,7 @@ scale = Vector2(0.4375, 0.4375)
 texture = ExtResource("15_jkkwj")
 
 [node name="PennyPortraitBG" type="Sprite2D" parent="PennyPortraitFrame"]
-scale = Vector2(1, 1)
 texture = ExtResource("16_0p6sq")
 
 [node name="PennyPortraitBase" type="Sprite2D" parent="PennyPortraitFrame"]
-scale = Vector2(1, 1)
 texture = ExtResource("17_eie1m")

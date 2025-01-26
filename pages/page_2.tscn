@@ -1,0 +1,124 @@
+[gd_scene load_steps=20 format=3 uid="uid://dstt6u8mqopaf"]
+
+[ext_resource type="Texture2D" uid="uid://bwfi1d2up7nkg" path="res://assets/panels/MilitaryMeet/MilitaryMeet_1.png" id="1_h6w0x"]
+[ext_resource type="Script" path="res://pages/page_2.gd" id="1_li6ct"]
+[ext_resource type="Texture2D" uid="uid://f8ceqay2xu8n" path="res://assets/panels/MilitaryMeet/MilitaryMeet_2.png" id="2_i6mb5"]
+[ext_resource type="Texture2D" uid="uid://b6sah7xp2pv3" path="res://assets/panels/MilitaryMeet/MilitaryMeet_3.png" id="3_ie6un"]
+[ext_resource type="Texture2D" uid="uid://dpg1k0gs6va0y" path="res://assets/panels/MilitaryMeet/MilitaryMeet_4.png" id="4_gnd0l"]
+[ext_resource type="Texture2D" uid="uid://j5ow465fhr7y" path="res://assets/panels/MilitaryMeet/MilitaryMeet_5.png" id="5_2m6yb"]
+[ext_resource type="Texture2D" uid="uid://dh6wf6lqlpre6" path="res://assets/panels/MilitaryMeet/MilitaryMeet_6.png" id="6_syk21"]
+[ext_resource type="Texture2D" uid="uid://buyp57sbwqpc7" path="res://assets/panels/MilitaryMeet/MilitaryMeet_7.png" id="7_ps6ph"]
+[ext_resource type="PackedScene" uid="uid://dexcjud8rqlu8" path="res://main/decision.tscn" id="7_tfvyc"]
+[ext_resource type="Texture2D" uid="uid://bd0lyswbgqkog" path="res://assets/panels/MilitaryMeet/MilitaryMeet_1_text1.png" id="8_c31jw"]
+[ext_resource type="Texture2D" uid="uid://cn1f4apsda7jw" path="res://assets/panels/MilitaryMeet/MilitaryMeet_1_text2.png" id="9_1kd7g"]
+[ext_resource type="Texture2D" uid="uid://d3sundeldxxhg" path="res://assets/panels/MilitaryMeet/MilitaryMeet_5_text.png" id="10_dmmvv"]
+[ext_resource type="Texture2D" uid="uid://idb45lng1jjf" path="res://assets/panels/MilitaryMeet/MilitaryMeet_6_text1.png" id="11_djoya"]
+[ext_resource type="Texture2D" uid="uid://bvntppbyxbg3c" path="res://assets/panels/MilitaryMeet/MilitaryMeet_7_text1.png" id="12_exkre"]
+[ext_resource type="Texture2D" uid="uid://cue54mbblyr3l" path="res://assets/panels/MilitaryMeet/MilitaryMeet_7_text2.png" id="13_hdatp"]
+[ext_resource type="Texture2D" uid="uid://c0kjjei15kt8b" path="res://assets/panels/MilitaryMeet/MilitaryMeet_3_text1.png" id="14_fe6fj"]
+[ext_resource type="Texture2D" uid="uid://ud3g55156ufk" path="res://assets/portraits/Penny/PennyFrame.png" id="15_chxk5"]
+[ext_resource type="Texture2D" uid="uid://dmlp1lr4pf6jd" path="res://assets/portraits/Penny/PennyWhiteBackground.png" id="16_43gqt"]
+[ext_resource type="Texture2D" uid="uid://bn4wli678t4aq" path="res://assets/portraits/Penny/PennyBase.png" id="17_xaish"]
+
+[node name="Page2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_li6ct")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 960.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.95, 0.95, 1, 1)
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="P1" type="Sprite2D" parent="Panels"]
+position = Vector2(512, 295)
+texture = ExtResource("1_h6w0x")
+
+[node name="T1" type="Sprite2D" parent="Panels"]
+position = Vector2(512, 295)
+texture = ExtResource("8_c31jw")
+
+[node name="T2" type="Sprite2D" parent="Panels"]
+position = Vector2(832, 336)
+texture = ExtResource("9_1kd7g")
+
+[node name="P2" type="Sprite2D" parent="Panels"]
+position = Vector2(288, 781)
+texture = ExtResource("2_i6mb5")
+
+[node name="P3" type="Sprite2D" parent="Panels"]
+position = Vector2(656, 783)
+texture = ExtResource("3_ie6un")
+
+[node name="C1" type="Sprite2D" parent="Panels"]
+position = Vector2(504, 680)
+scale = Vector2(0.4375, 0.4375)
+texture = ExtResource("14_fe6fj")
+
+[node name="Decision" parent="Panels" instance=ExtResource("7_tfvyc")]
+offset_left = 496.0
+offset_top = 668.0
+offset_right = 496.0
+offset_bottom = 668.0
+word_list = Array[String](["That idiot"])
+
+[node name="P5" type="Sprite2D" parent="Panels"]
+position = Vector2(1488, 272)
+texture = ExtResource("5_2m6yb")
+
+[node name="P4" type="Sprite2D" parent="Panels"]
+position = Vector2(1168, 296)
+texture = ExtResource("4_gnd0l")
+
+[node name="T4" type="Sprite2D" parent="Panels"]
+position = Vector2(1512, 96)
+texture = ExtResource("10_dmmvv")
+
+[node name="P6" type="Sprite2D" parent="Panels"]
+position = Vector2(1168, 768)
+texture = ExtResource("6_syk21")
+
+[node name="T5" type="Sprite2D" parent="Panels"]
+position = Vector2(1312, 640)
+texture = ExtResource("11_djoya")
+
+[node name="P8" type="Sprite2D" parent="Panels"]
+position = Vector2(1628, 788)
+scale = Vector2(1.14063, 1.14063)
+texture = ExtResource("7_ps6ph")
+
+[node name="T6" type="Sprite2D" parent="Panels"]
+position = Vector2(1424, 848)
+texture = ExtResource("12_exkre")
+
+[node name="T7" type="Sprite2D" parent="Panels"]
+position = Vector2(1832, 944)
+texture = ExtResource("13_hdatp")
+
+[node name="PennyPortraitFrame" type="Sprite2D" parent="Panels"]
+position = Vector2(1800, 656)
+scale = Vector2(0.4375, 0.4375)
+texture = ExtResource("15_chxk5")
+
+[node name="PennyPortraitBG" type="Sprite2D" parent="Panels/PennyPortraitFrame"]
+texture = ExtResource("16_43gqt")
+
+[node name="PennyPortraitBase" type="Sprite2D" parent="Panels/PennyPortraitFrame"]
+texture = ExtResource("17_xaish")
