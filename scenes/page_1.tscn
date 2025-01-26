@@ -34,7 +34,6 @@ texture = ExtResource("5_ts5on")
 
 [node name="P5" type="Sprite2D" parent="."]
 position = Vector2(1646, 298)
-scale = Vector2(1, 1)
 texture = ExtResource("6_ktiuk")
 
 [node name="P6" type="Sprite2D" parent="."]
