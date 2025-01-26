@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://br1u4dxauauu6"
-path="res://.godot/imported/Kenney Pixel.ttf-196d9a985a10e39dfa307a6e8e7b451e.fontdata"
+uid="uid://iphqg34o46pu"
+path="res://.godot/imported/Rajdhani-Bold.woff-3a31f459a2a5419dd21d09ff386c999a.fontdata"
 
 [deps]
 
-source_file="res://ui/fonts/Kenney Pixel.ttf"
-dest_files=["res://.godot/imported/Kenney Pixel.ttf-196d9a985a10e39dfa307a6e8e7b451e.fontdata"]
+source_file="res://assets/fonts/Rajdhani/Fonts/WEB/fonts/Rajdhani-Bold.woff"
+dest_files=["res://.godot/imported/Rajdhani-Bold.woff-3a31f459a2a5419dd21d09ff386c999a.fontdata"]
 
 [params]
 

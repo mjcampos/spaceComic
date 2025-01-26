@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://br1u4dxauauu6"
-path="res://.godot/imported/Kenney Pixel.ttf-196d9a985a10e39dfa307a6e8e7b451e.fontdata"
+uid="uid://3g7etsm6siqc"
+path="res://.godot/imported/RX100-Regular.woff2-4a7936757974798a81406b7f2ab6cff5.fontdata"
 
 [deps]
 
-source_file="res://ui/fonts/Kenney Pixel.ttf"
-dest_files=["res://.godot/imported/Kenney Pixel.ttf-196d9a985a10e39dfa307a6e8e7b451e.fontdata"]
+source_file="res://assets/fonts/RX100/Fonts/WEB/fonts/RX100-Regular.woff2"
+dest_files=["res://.godot/imported/RX100-Regular.woff2-4a7936757974798a81406b7f2ab6cff5.fontdata"]
 
 [params]
 

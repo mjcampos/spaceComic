@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://br1u4dxauauu6"
-path="res://.godot/imported/Kenney Pixel.ttf-196d9a985a10e39dfa307a6e8e7b451e.fontdata"
+uid="uid://jkvjn7vn3cnm"
+path="res://.godot/imported/Comico-Regular.otf-bfa658ab6ae4624554905ba025382046.fontdata"
 
 [deps]
 
-source_file="res://ui/fonts/Kenney Pixel.ttf"
-dest_files=["res://.godot/imported/Kenney Pixel.ttf-196d9a985a10e39dfa307a6e8e7b451e.fontdata"]
+source_file="res://assets/fonts/Comico/Fonts/OTF/Comico-Regular.otf"
+dest_files=["res://.godot/imported/Comico-Regular.otf-bfa658ab6ae4624554905ba025382046.fontdata"]
 
 [params]
 
