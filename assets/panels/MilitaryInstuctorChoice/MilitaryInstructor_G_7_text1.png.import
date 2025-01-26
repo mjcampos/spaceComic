@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3xddwb6i56by"
-path="res://.godot/imported/MilitaryInstructor_4_text1.png-665fcce2946a1c41fcca4d54aaae6b4a.ctex"
+uid="uid://ba7o6ygt33lxv"
+path="res://.godot/imported/MilitaryInstructor_G_7_text1.png-d1b1cddfd9664a65e4a7e54009e3980a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panels/MilitaryInstuctorChoice_N/MilitaryInstructor_4_text1.png"
-dest_files=["res://.godot/imported/MilitaryInstructor_4_text1.png-665fcce2946a1c41fcca4d54aaae6b4a.ctex"]
+source_file="res://assets/panels/MilitaryInstuctorChoice/MilitaryInstructor_G_7_text1.png"
+dest_files=["res://.godot/imported/MilitaryInstructor_G_7_text1.png-d1b1cddfd9664a65e4a7e54009e3980a.ctex"]
 
 [params]
 

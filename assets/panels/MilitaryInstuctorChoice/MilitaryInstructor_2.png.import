@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqwkgwymv721"
-path="res://.godot/imported/MilitaryInstructor_2.png-74c3b0550da1460ebef1758f384b3de2.ctex"
+path="res://.godot/imported/MilitaryInstructor_2.png-0fd9a6608e5d86fcd5f0b3888eb3392f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/panels/MilitaryInstuctorChoice_N/MilitaryInstructor_2.png"
-dest_files=["res://.godot/imported/MilitaryInstructor_2.png-74c3b0550da1460ebef1758f384b3de2.ctex"]
+source_file="res://assets/panels/MilitaryInstuctorChoice/MilitaryInstructor_2.png"
+dest_files=["res://.godot/imported/MilitaryInstructor_2.png-0fd9a6608e5d86fcd5f0b3888eb3392f.ctex"]
 
 [params]
 
