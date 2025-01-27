@@ -1,15 +1,13 @@
 extends Control
 
 
-@export var word_list : Array[String] = [
-	"Word choice 1",
-	"Word choice 2",
-	"Word choice 3"
-]
+@export var word_list : Array[String] = []
 @export var tone_list : Array[Texture]
 var is_current : bool = false : set = set_current
 var word_index : int = 0 : set = set_word
 var tone_index : int = 0 : set = set_tone
+
+signal decision_confirmed
 
 
 func set_current(val : bool):
@@ -21,13 +19,15 @@ func set_current(val : bool):
 
 
 func set_word(val : int):
-	word_index = wrapi(val, 0, word_list.size())
-	$GridContainer/TextBubble/Text.text = word_list[word_index]
+	if !word_list.is_empty():
+		word_index = wrapi(val, 0, word_list.size())
+		$GridContainer/TextBubble/Text.text = word_list[word_index]
 
 
 func set_tone(val : int):
-	tone_index = wrapi(val, 0, tone_list.size())
-	$GridContainer/TextBubble/Bubble.texture = tone_list[tone_index]
+	if !tone_list.is_empty():
+		tone_index = wrapi(val, 0, tone_list.size())
+		$GridContainer/TextBubble/Bubble.texture = tone_list[tone_index]
 
 
 func _ready() -> void:
@@ -46,6 +46,13 @@ func _process(delta):
 			_on_btn_left_pressed()
 		if Input.is_action_just_pressed("decision_right"):
 			_on_btn_right_pressed()
+		if Input.is_action_just_pressed("ui_accept"):
+			confirm_decision()
+
+
+func confirm_decision():
+	decision_confirmed.emit()
+	is_current = false
 
 
 func _on_btn_up_pressed():

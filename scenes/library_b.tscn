@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cv43d4hwjdek3"]
-
-[ext_resource type="Texture2D" uid="uid://d20ua7p4v04ne" path="res://assets/BlackBackground.png" id="1_i2ced"]
-
-[node name="Library_B" type="Node2D"]
-
-[node name="BlackBackground" type="Sprite2D" parent="."]
-position = Vector2(960, 540)
-texture = ExtResource("1_i2ced")
