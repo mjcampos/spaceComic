@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://lrrqhud3acwr"]
+
+[ext_resource type="Texture2D" uid="uid://cxtrpkl7esys2" path="res://assets/panels/BunkerNeutral/NeutralBunker_1.png" id="1_7lk5o"]
+[ext_resource type="Texture2D" uid="uid://cxisitnfs12ta" path="res://assets/panels/BunkerNeutral/NeutralBunker_2.png" id="2_3um1c"]
+[ext_resource type="Texture2D" uid="uid://calcx84so2d06" path="res://assets/panels/BunkerNeutral/NeutralBunker_3.png" id="3_76okd"]
+[ext_resource type="Texture2D" uid="uid://wguk5o4q0oh1" path="res://assets/panels/BunkerNeutral/NeutralBunker_4.png" id="4_vssid"]
+[ext_resource type="Texture2D" uid="uid://boqejcvsris73" path="res://assets/panels/BunkerNeutral/NeutralBunker_5.png" id="5_qyn4n"]
+[ext_resource type="Texture2D" uid="uid://n6x1t0nyil84" path="res://assets/panels/BunkerNeutral/NeutralBunker_6.png" id="6_yymfq"]
+[ext_resource type="Texture2D" uid="uid://moudbk81udpb" path="res://assets/panels/BunkerNeutral/NeutralBunker_7.png" id="7_l0qus"]
+[ext_resource type="Texture2D" uid="uid://81uvdixsnhul" path="res://assets/panels/BunkerNeutral/NeutralBunker_8.png" id="8_8w6nk"]
+
+[node name="BunkerChoiceNeutral" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.619608, 0.67451, 0.737255, 1)
+
+[node name="P1" type="Sprite2D" parent="."]
+position = Vector2(280, 276)
+texture = ExtResource("1_7lk5o")
+
+[node name="P2" type="Sprite2D" parent="."]
+position = Vector2(688, 296)
+texture = ExtResource("2_3um1c")
+
+[node name="P3" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(324, 778)
+texture = ExtResource("3_76okd")
+
+[node name="P4" type="Sprite2D" parent="."]
+position = Vector2(424, 776)
+scale = Vector2(0.597656, 0.597656)
+texture = ExtResource("4_vssid")
+
+[node name="P5" type="Sprite2D" parent="."]
+position = Vector2(760, 784)
+texture = ExtResource("5_qyn4n")
+
+[node name="P6" type="Sprite2D" parent="."]
+position = Vector2(1466, 228)
+texture = ExtResource("6_yymfq")
+
+[node name="P7" type="Sprite2D" parent="."]
+position = Vector2(1448, 552)
+texture = ExtResource("7_l0qus")
+
+[node name="P8" type="Sprite2D" parent="."]
+position = Vector2(1472, 832)
+scale = Vector2(0.978125, 0.978125)
+texture = ExtResource("8_8w6nk")
