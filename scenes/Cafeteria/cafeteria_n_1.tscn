@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://lk2el8vxyoac"]
+
+[ext_resource type="Texture2D" uid="uid://d20ua7p4v04ne" path="res://assets/BlackBackground.png" id="1_m1ae8"]
+[ext_resource type="Texture2D" uid="uid://bnf1byh1w3rkl" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_1.png" id="2_up741"]
+[ext_resource type="Texture2D" uid="uid://c85ad47sphdrn" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_3.png" id="3_uqgp8"]
+[ext_resource type="Texture2D" uid="uid://d3m74cfmgpt4s" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_2.png" id="4_b3am1"]
+[ext_resource type="Texture2D" uid="uid://dmrkes2kex376" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_4.png" id="5_ecwkq"]
+[ext_resource type="Texture2D" uid="uid://duprx413q4ckh" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_5.png" id="6_5yjo2"]
+
+[node name="Cafeteria_N1" type="Node2D"]
+
+[node name="BlackBackground" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_m1ae8")
+
+[node name="NeutralCafeteria1" type="Sprite2D" parent="."]
+position = Vector2(246, 268)
+texture = ExtResource("2_up741")
+
+[node name="NeutralCafeteria3" type="Sprite2D" parent="."]
+position = Vector2(447, 695)
+scale = Vector2(0.854248, 0.854248)
+texture = ExtResource("3_uqgp8")
+
+[node name="NeutralCafeteria2" type="Sprite2D" parent="."]
+position = Vector2(483, 268)
+texture = ExtResource("4_b3am1")
+
+[node name="NeutralCafeteria4" type="Sprite2D" parent="."]
+position = Vector2(1453, 237)
+texture = ExtResource("5_ecwkq")
+
+[node name="NeutralCafeteria5" type="Sprite2D" parent="."]
+position = Vector2(1417, 752)
+texture = ExtResource("6_5yjo2")
