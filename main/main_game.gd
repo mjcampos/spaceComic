@@ -3,19 +3,23 @@ extends Control
 
 @onready var page_list = $Pages.get_children()
 
-var page_index : int = 2
+var page_index : int = 3
 
 
 func _ready() -> void:
 	for page in page_list:
 		page.modulate = Color(1, 1, 1, 0)
-		page.half_finished.connect(pan_camera)
+		page.cam_pan_triggered.connect(pan_camera)
 	page_list[page_index].modulate = Color(1,1,1,1)
 
 
-func pan_camera():
+func pan_camera(type):
 	var cam_tween = create_tween()
-	cam_tween.tween_property($Camera, "position", Vector2(960,0), 1.0)
+	match type:
+		"half":
+			cam_tween.tween_property($Camera, "position", Vector2(960,0), 1.0)
+		"back":
+			cam_tween.tween_property($Camera, "position", Vector2.ZERO, 1.0)
 	cam_tween.play()
 
 

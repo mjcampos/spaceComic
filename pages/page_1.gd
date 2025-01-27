@@ -20,7 +20,7 @@ var page_finished : bool = false
 var panel_tween : Tween
 var paused : bool = false
 
-signal half_finished
+signal cam_pan_triggered
 
 
 func _ready() -> void:
@@ -32,9 +32,8 @@ func _ready() -> void:
 func next_panel():
 	if panel_queue[panel_index] is String:
 		print("Panning camera...")
-		if panel_queue[panel_index] == "half":
-			half_finished.emit()
-			panel_index += 1
+		cam_pan_triggered.emit(panel_queue[panel_index])
+		panel_index += 1
 	else:
 		print("Showing panel: %s" % panel_queue[panel_index].name)
 		panel_tween = create_tween()

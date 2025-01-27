@@ -27,11 +27,12 @@ extends Control
 	],
 ]
 var panel_index : int = 0
+var path_choice : int = 0
 var path_index : int = 0
 var page_finished : bool = false
 var paused : bool = false
 
-signal half_finished
+signal cam_pan_triggered
 
 
 func _ready() -> void:
@@ -49,9 +50,8 @@ func next_panel():
 	if panel_index < panel_queue.size():
 		if panel_queue[panel_index] is String:
 			print("Panning camera...")
-			if panel_queue[panel_index] == "half":
-				half_finished.emit()
-				panel_index += 1
+			cam_pan_triggered.emit(panel_queue[panel_index])
+			panel_index += 1
 		else:
 			print("Showing panel: %s" % panel_queue[panel_index].name)
 			var panel_tween = create_tween()
@@ -76,6 +76,7 @@ func _on_tween_finished():
 	else:
 		path_index += 1
 	if panel_index >= panel_queue.size() and path_index >= paths[$Decision.word_index].size():
+		path_choice = $Decision.word_index
 		page_finished = true
 
 
