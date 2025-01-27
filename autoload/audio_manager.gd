@@ -1,5 +1,6 @@
 extends Node
 
+@onready var sfx_uitone_excited: AudioStreamPlayer = $SFX_UITONE_Excited
 @onready var sfx_uitone_talking: AudioStreamPlayer = $SFX_UITONE_Talking
 @onready var sfx_uitone_thinking: AudioStreamPlayer = $SFX_UITONE_Thinking
 @onready var sfx_uitone_whisper: AudioStreamPlayer = $SFX_UITONE_Whisper
@@ -117,6 +118,12 @@ extends Node
 @onready var vo_instructor_good_work: AudioStreamPlayer = $VoInstructorGoodWork
 @onready var vo_instructor_pay_attention: AudioStreamPlayer = $VoInstructorPayAttention
 @onready var vo_instructor_repeat_sap: AudioStreamPlayer = $VoInstructorRepeatSap
+@onready var vo_narrator_ending_bad: AudioStreamPlayer = $VoNarratorEndingBad
+@onready var vo_narrator_ending_good: AudioStreamPlayer = $VoNarratorEndingGood
+@onready var vo_narrator_ending_neutral: AudioStreamPlayer = $VoNarratorEndingNeutral
+@onready var vo_narrator_scene_2_military_instructor: AudioStreamPlayer = $VoNarratorScene2MilitaryInstructor
+@onready var vo_narrator_scene_3_cafeteria: AudioStreamPlayer = $VoNarratorScene3Cafeteria
+@onready var vo_narrator_scene_4_bunker: AudioStreamPlayer = $VoNarratorScene4Bunker
 @onready var music_ambient_theme_1: AudioStreamPlayer = $Music_AmbientTheme_1
 @onready var music_ambient_theme_2: AudioStreamPlayer = $Music_AmbientTheme_2
 @onready var music_ambient_theme_3: AudioStreamPlayer = $Music_AmbientTheme_3

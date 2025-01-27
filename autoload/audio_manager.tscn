@@ -1,4 +1,4 @@
-[gd_scene load_steps=124 format=3 uid="uid://du1qymmg85vp6"]
+[gd_scene load_steps=130 format=3 uid="uid://du1qymmg85vp6"]
 
 [ext_resource type="Script" path="res://autoload/audio_manager.gd" id="1_2qak2"]
 [ext_resource type="AudioStream" uid="uid://mdrp02slsxb3" path="res://Audio/SFX/NAVIC_SFX_UITone_Excited3.wav" id="2_cqwdl"]
@@ -123,6 +123,12 @@
 [ext_resource type="AudioStream" uid="uid://ch8mdhukuthdw" path="res://Audio/VO/Instructor/VO_Instructor_GoodWork.wav" id="117_73qgt"]
 [ext_resource type="AudioStream" uid="uid://dk228m2yjp3dn" path="res://Audio/VO/Instructor/VO_Instructor_PayAttention.wav" id="118_76ow4"]
 [ext_resource type="AudioStream" uid="uid://hhd3syb5wf6q" path="res://Audio/VO/Instructor/VO_Instructor_RepeatSAP.wav" id="119_6ymuj"]
+[ext_resource type="AudioStream" uid="uid://co8320v1decfw" path="res://Audio/VO/Narrator/VO_Narrator_Ending_Bad.wav" id="120_crhxc"]
+[ext_resource type="AudioStream" uid="uid://ct6sisye1yed8" path="res://Audio/VO/Narrator/VO_Narrator_Ending_Good.wav" id="121_cbym3"]
+[ext_resource type="AudioStream" uid="uid://dkrw0uqegpo6e" path="res://Audio/VO/Narrator/VO_Narrator_Ending_Neutral.wav" id="122_1i2o6"]
+[ext_resource type="AudioStream" uid="uid://b1tbjteeo35qt" path="res://Audio/VO/Narrator/VO_Narrator_Scene2_MilitaryInstructor.wav" id="123_n7yg4"]
+[ext_resource type="AudioStream" uid="uid://c2hm46sftb3jb" path="res://Audio/VO/Narrator/VO_Narrator_Scene3_Cafeteria.wav" id="124_0c5pe"]
+[ext_resource type="AudioStream" uid="uid://c00p6xksc5xaf" path="res://Audio/VO/Narrator/VO_Narrator_Scene4_Bunker.wav" id="125_wknwt"]
 
 [node name="AudioManager" type="Node"]
 script = ExtResource("1_2qak2")
@@ -597,6 +603,30 @@ bus = &"Voice"
 
 [node name="VoInstructorRepeatSap" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("119_6ymuj")
+bus = &"Voice"
+
+[node name="VoNarratorEndingBad" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("120_crhxc")
+bus = &"Voice"
+
+[node name="VoNarratorEndingGood" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("121_cbym3")
+bus = &"Voice"
+
+[node name="VoNarratorEndingNeutral" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("122_1i2o6")
+bus = &"Voice"
+
+[node name="VoNarratorScene2MilitaryInstructor" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("123_n7yg4")
+bus = &"Voice"
+
+[node name="VoNarratorScene3Cafeteria" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("124_0c5pe")
+bus = &"Voice"
+
+[node name="VoNarratorScene4Bunker" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("125_wknwt")
 bus = &"Voice"
 
 [node name="Music_AmbientTheme_1" type="AudioStreamPlayer" parent="."]
