@@ -9,9 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://moudbk81udpb" path="res://assets/panels/BunkerNeutral/NeutralBunker_7.png" id="7_l0qus"]
 [ext_resource type="Texture2D" uid="uid://81uvdixsnhul" path="res://assets/panels/BunkerNeutral/NeutralBunker_8.png" id="8_8w6nk"]
 
-[node name="BunkerChoiceNeutral" type="Node2D"]
+[node name="BunkerChoiceNeutral" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
