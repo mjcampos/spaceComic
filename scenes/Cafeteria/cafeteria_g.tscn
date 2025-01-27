@@ -1,0 +1,83 @@
+[gd_scene load_steps=16 format=3 uid="uid://da1qsswifp3lt"]
+
+[ext_resource type="Texture2D" uid="uid://d20ua7p4v04ne" path="res://assets/BlackBackground.png" id="1_33d1n"]
+[ext_resource type="Texture2D" uid="uid://bqpcf7iyvkusa" path="res://assets/panels/cafeteria_good/GoodCafeteria_1.png" id="2_ewjs2"]
+[ext_resource type="Texture2D" uid="uid://brpn0cqe0hwxo" path="res://assets/panels/cafeteria_good/GoodCafeteria_1_text1.png" id="3_cququ"]
+[ext_resource type="Texture2D" uid="uid://bnbtwbid6a4j7" path="res://assets/panels/cafeteria_good/GoodCafeteria_2.png" id="4_wq2j2"]
+[ext_resource type="Texture2D" uid="uid://dbc082hd735p7" path="res://assets/panels/cafeteria_good/GoodCafeteria_3.png" id="5_47gci"]
+[ext_resource type="Texture2D" uid="uid://clu5keyklhdd" path="res://assets/panels/cafeteria_good/GoodCafeteria_4.png" id="6_mn65n"]
+[ext_resource type="Texture2D" uid="uid://ckia836ns5okg" path="res://assets/panels/cafeteria_good/GoodCafeteria_4_DB.png" id="7_8p7kd"]
+[ext_resource type="Texture2D" uid="uid://cd4lqbs81otmm" path="res://assets/panels/cafeteria_good/GoodCafeteria_4_text1.png" id="8_kfn8p"]
+[ext_resource type="Texture2D" uid="uid://clqvypjx7u6kv" path="res://assets/panels/cafeteria_good/GoodCafeteria_B_5.png" id="9_37i76"]
+[ext_resource type="Texture2D" uid="uid://c06j86yw4laad" path="res://assets/panels/cafeteria_good/GoodCafeteria_5_text1.png" id="10_k0aye"]
+[ext_resource type="Texture2D" uid="uid://t1ucws0kqq25" path="res://assets/panels/cafeteria_good/GoodCafeteria_6.png" id="11_7y8ew"]
+[ext_resource type="Texture2D" uid="uid://c2b3i1n28841d" path="res://assets/panels/cafeteria_good/GoodCafeteria_6_text1.png" id="12_jp4p0"]
+[ext_resource type="Texture2D" uid="uid://bgcgo8fip41bq" path="res://assets/panels/cafeteria_good/GoodCafeteria_6_text2.png" id="13_jk6pw"]
+[ext_resource type="Texture2D" uid="uid://i872xp34r5p" path="res://assets/panels/cafeteria_good/GoodCafeteria_8.png" id="14_rpx0v"]
+[ext_resource type="Texture2D" uid="uid://c48nejpov2fsk" path="res://assets/panels/cafeteria_good/GoodCafeteria_7.png" id="15_cfw5n"]
+
+[node name="Cafeteria_G" type="Node2D"]
+
+[node name="BlackBackground" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_33d1n")
+
+[node name="GoodCafeteria1" type="Sprite2D" parent="."]
+position = Vector2(234, 270)
+texture = ExtResource("2_ewjs2")
+
+[node name="GoodCafeteria1Text1" type="Sprite2D" parent="."]
+position = Vector2(94, 126)
+texture = ExtResource("3_cququ")
+
+[node name="GoodCafeteria2" type="Sprite2D" parent="."]
+position = Vector2(547, 277)
+texture = ExtResource("4_wq2j2")
+
+[node name="GoodCafeteria3" type="Sprite2D" parent="."]
+position = Vector2(794, 258)
+texture = ExtResource("5_47gci")
+
+[node name="GoodCafeteria4" type="Sprite2D" parent="."]
+position = Vector2(469, 796)
+scale = Vector2(0.76, 0.76)
+texture = ExtResource("6_mn65n")
+
+[node name="GoodCafeteria4Db" type="Sprite2D" parent="."]
+position = Vector2(428, 721)
+texture = ExtResource("7_8p7kd")
+
+[node name="GoodCafeteria4Text1" type="Sprite2D" parent="."]
+position = Vector2(438, 583)
+scale = Vector2(0.840001, 0.840001)
+texture = ExtResource("8_kfn8p")
+
+[node name="GoodCafeteriaB5" type="Sprite2D" parent="."]
+position = Vector2(1191, 271)
+texture = ExtResource("9_37i76")
+
+[node name="GoodCafeteria5Text1" type="Sprite2D" parent="."]
+position = Vector2(1050, 145)
+texture = ExtResource("10_k0aye")
+
+[node name="GoodCafeteria6" type="Sprite2D" parent="."]
+position = Vector2(1644, 340)
+texture = ExtResource("11_7y8ew")
+
+[node name="GoodCafeteria6Text1" type="Sprite2D" parent="."]
+position = Vector2(1459, 154)
+texture = ExtResource("12_jp4p0")
+
+[node name="GoodCafeteria6Text2" type="Sprite2D" parent="."]
+position = Vector2(1836, 392)
+texture = ExtResource("13_jk6pw")
+
+[node name="GoodCafeteria8" type="Sprite2D" parent="."]
+position = Vector2(1484, 795)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("14_rpx0v")
+
+[node name="GoodCafeteria7" type="Sprite2D" parent="."]
+position = Vector2(1190, 702)
+scale = Vector2(0.840002, 0.840002)
+texture = ExtResource("15_cfw5n")
