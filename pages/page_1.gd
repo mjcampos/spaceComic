@@ -18,6 +18,7 @@ extends Control
 var panel_index : int = 0
 var page_finished : bool = false
 var panel_tween : Tween
+var paused : bool = false
 
 signal half_finished
 
