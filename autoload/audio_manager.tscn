@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://du1qymmg85vp6"]
+[gd_scene load_steps=124 format=3 uid="uid://du1qymmg85vp6"]
 
 [ext_resource type="Script" path="res://autoload/audio_manager.gd" id="1_2qak2"]
 [ext_resource type="AudioStream" uid="uid://mdrp02slsxb3" path="res://Audio/SFX/NAVIC_SFX_UITone_Excited3.wav" id="2_cqwdl"]
@@ -10,10 +10,119 @@
 [ext_resource type="AudioStream" uid="uid://uh6b0jkpbu0h" path="res://Audio/SFX/NAVIC_SFX_UI_BoopRight.wav" id="8_6lric"]
 [ext_resource type="AudioStream" uid="uid://dy6lg43xnipd3" path="res://Audio/SFX/NAVIC_SFX_Chime_Penelope.wav" id="9_xlaol"]
 [ext_resource type="AudioStream" uid="uid://b25xucwsswhnc" path="res://Audio/SFX/NAVIC_SFX_Chime_Trista.wav" id="10_r82ln"]
+[ext_resource type="AudioStream" uid="uid://406nfid0xaex" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HMM_1.wav" id="11_12cbs"]
 [ext_resource type="AudioStream" uid="uid://bg3at65o5h5ta" path="res://Audio/Music/NAVIC_Music_AmbientTheme_1.mp3" id="11_b7ii2"]
 [ext_resource type="AudioStream" uid="uid://e5o08yp0mup8" path="res://Audio/Music/NAVIC_Music_AmbientTheme_2.mp3" id="12_atvfp"]
+[ext_resource type="AudioStream" uid="uid://bwv5unelnx0ye" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HuhHM_1.wav" id="12_tuy5i"]
 [ext_resource type="AudioStream" uid="uid://bticm6w3urjdn" path="res://Audio/Music/NAVIC_Music_AmbientTheme_3.mp3" id="13_tx21p"]
+[ext_resource type="AudioStream" uid="uid://c1no0tbiy5j23" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HuhHM_2.wav" id="13_ygaol"]
+[ext_resource type="AudioStream" uid="uid://x4cf536mvyxm" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HuhHM_3.wav" id="14_2x30j"]
 [ext_resource type="AudioStream" uid="uid://b4iqpsj713b0r" path="res://Audio/Music/NAVIC_Music_AmbientTheme_4.mp3" id="14_bsqet"]
+[ext_resource type="AudioStream" uid="uid://dwrm55apg33yh" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HuhHM_4.wav" id="15_kshc6"]
+[ext_resource type="AudioStream" uid="uid://dtmdevyxj1ft5" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_NANIWHAT_1.wav" id="16_87yhy"]
+[ext_resource type="AudioStream" uid="uid://cxefqr2w1shxn" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_NANIWHAT_3.wav" id="17_te61b"]
+[ext_resource type="AudioStream" uid="uid://de5n86ytbxtad" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_NANIWHAT_2.wav" id="18_n5tnd"]
+[ext_resource type="AudioStream" uid="uid://s3buxrrmmk22" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_OhQuestionMark_1.wav" id="19_ijber"]
+[ext_resource type="AudioStream" uid="uid://bbvinspgtso6q" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_Oh_1.wav" id="20_vxsdn"]
+[ext_resource type="AudioStream" uid="uid://bo0a230yluw36" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_PfftOh_1.wav" id="21_x4viu"]
+[ext_resource type="AudioStream" uid="uid://dyvmd15w70ypb" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_Sighh_1.wav" id="22_phxqb"]
+[ext_resource type="AudioStream" uid="uid://c38rf417pf7s" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_Sigh_1.wav" id="23_csiyp"]
+[ext_resource type="AudioStream" uid="uid://butohduhbhu1a" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_Sigh_2.wav" id="24_4wcoh"]
+[ext_resource type="AudioStream" uid="uid://cek2wesa3ldhw" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_SighYeah_1.wav" id="25_jj6ha"]
+[ext_resource type="AudioStream" uid="uid://dt35ae5btv0cv" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_SighYeah_2.wav" id="26_wr1of"]
+[ext_resource type="AudioStream" uid="uid://b6b8mre0ms34s" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_Yeah_1.wav" id="27_o2727"]
+[ext_resource type="AudioStream" uid="uid://ctkq01akspja0" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_Yeah_2.wav" id="28_t30uw"]
+[ext_resource type="AudioStream" uid="uid://c5uguojbfw3y8" path="res://Audio/VO/Penelope/VO_Penelope_Endings_Bad_YeetedIntoCopperPosts.wav" id="29_5otlq"]
+[ext_resource type="AudioStream" uid="uid://b6vgk7luskgaj" path="res://Audio/VO/Penelope/VO_Penelope_Endings_Neutral_NoMorning.wav" id="30_olkdc"]
+[ext_resource type="AudioStream" uid="uid://c8irq0m5a6xgu" path="res://Audio/VO/Penelope/VO_Penelope_Endings_Good_GonnaBeDaijoubu.wav" id="31_ibfty"]
+[ext_resource type="AudioStream" uid="uid://bjnxpl30hab4c" path="res://Audio/VO/Penelope/VO_Penelope_Opening_Idiot.wav" id="32_t6g65"]
+[ext_resource type="AudioStream" uid="uid://b66s10580xmwd" path="res://Audio/VO/Penelope/VO_Penelope_Opening_IronCapella.wav" id="33_jk02i"]
+[ext_resource type="AudioStream" uid="uid://bfjdyl5n7lsxk" path="res://Audio/VO/Penelope/VO_Penelope_Opening_MakeChoice.wav" id="34_scg3w"]
+[ext_resource type="AudioStream" uid="uid://pfxpg0ioblco" path="res://Audio/VO/Penelope/VO_Penelope_Scene1_Triss.wav" id="35_3clmt"]
+[ext_resource type="AudioStream" uid="uid://dd7r37drx26b1" path="res://Audio/VO/Penelope/VO_Penelope_Scene2_StrainedPeneloNoises.wav" id="36_fxgcg"]
+[ext_resource type="AudioStream" uid="uid://bhxbl44va2a0n" path="res://Audio/VO/Penelope/VO_Penelope_Scene3_JustWantedToSay.wav" id="37_m6hcv"]
+[ext_resource type="AudioStream" uid="uid://us5v6une82tf" path="res://Audio/VO/Penelope/VO_Penelope_Scene3_LongMonthCheers.wav" id="38_7ekjn"]
+[ext_resource type="AudioStream" uid="uid://3knpqwyknwmt" path="res://Audio/VO/Penelope/VO_Penelope_Scene3_What.wav" id="39_16d7u"]
+[ext_resource type="AudioStream" uid="uid://d1cx3ce4lyxyr" path="res://Audio/VO/Penelope/VO_Penelope_Scene4_ImDone.wav" id="40_k3adg"]
+[ext_resource type="AudioStream" uid="uid://dlnokcokwyg4q" path="res://Audio/VO/Penelope/VO_Penelope_Scene4_YouAlwaysThoughtSimp.wav" id="41_j35yx"]
+[ext_resource type="AudioStream" uid="uid://c6sjc2p0th1wk" path="res://Audio/VO/Trista/VO_TristaEfforts_Ahck_1.wav" id="42_vydh3"]
+[ext_resource type="AudioStream" uid="uid://swmlb5koyud4" path="res://Audio/VO/Trista/VO_TristaEfforts_Ahck_2.wav" id="43_h5x82"]
+[ext_resource type="AudioStream" uid="uid://7u7m8sqiqlsb" path="res://Audio/VO/Trista/VO_TristaEfforts_Ahck_3.wav" id="44_685i0"]
+[ext_resource type="AudioStream" uid="uid://df2emiy33jg0o" path="res://Audio/VO/Trista/VO_TristaEfforts_Grr_1.wav" id="45_7d56h"]
+[ext_resource type="AudioStream" uid="uid://clii8f6cndytf" path="res://Audio/VO/Trista/VO_TristaEfforts_Grr_2.wav" id="46_a5st6"]
+[ext_resource type="AudioStream" uid="uid://dwkrxe5ce72h3" path="res://Audio/VO/Trista/VO_TristaEfforts_Grr_3.wav" id="47_x45uw"]
+[ext_resource type="AudioStream" uid="uid://cavc8py750ayk" path="res://Audio/VO/Trista/VO_TristaEfforts_Hmmm_1.wav" id="48_n6r1l"]
+[ext_resource type="AudioStream" uid="uid://bm7a17m3xo58x" path="res://Audio/VO/Trista/VO_TristaEfforts_Hmmm_2.wav" id="49_ambsn"]
+[ext_resource type="AudioStream" uid="uid://bmmm4r45vl44o" path="res://Audio/VO/Trista/VO_TristaEfforts_Hmmm_3.wav" id="50_nq2ar"]
+[ext_resource type="AudioStream" uid="uid://b75bekmdxlwmv" path="res://Audio/VO/Trista/VO_TristaEfforts_Huh_1.wav" id="51_rsbsx"]
+[ext_resource type="AudioStream" uid="uid://ce2xk24hcbyok" path="res://Audio/VO/Trista/VO_TristaEfforts_Huh_2.wav" id="52_2fnd0"]
+[ext_resource type="AudioStream" uid="uid://bvv51i6hl7x5v" path="res://Audio/VO/Trista/VO_TristaEfforts_Huh_3.wav" id="53_b0u26"]
+[ext_resource type="AudioStream" uid="uid://ccb8rsxdbs2j6" path="res://Audio/VO/Trista/VO_TristaEfforts_Kyah_1.wav" id="54_ivcwf"]
+[ext_resource type="AudioStream" uid="uid://dftcsb7lbbhuj" path="res://Audio/VO/Trista/VO_TristaEfforts_Kyah_2.wav" id="55_66aff"]
+[ext_resource type="AudioStream" uid="uid://bcio5i4b4pure" path="res://Audio/VO/Trista/VO_TristaEfforts_Kyah_3.wav" id="56_phs32"]
+[ext_resource type="AudioStream" uid="uid://bwkg6fr0w5tv6" path="res://Audio/VO/Trista/VO_TristaEfforts_LaughsInHahas_1.wav" id="57_u6ste"]
+[ext_resource type="AudioStream" uid="uid://cdqdoehvv8byb" path="res://Audio/VO/Trista/VO_TristaEfforts_LaughsInHahas_2.wav" id="58_w0rl3"]
+[ext_resource type="AudioStream" uid="uid://by8sfcqeglo1s" path="res://Audio/VO/Trista/VO_TristaEfforts_LaughsInHahas_3.wav" id="59_ctekv"]
+[ext_resource type="AudioStream" uid="uid://bthnk7fhrgtvv" path="res://Audio/VO/Trista/VO_TristaEfforts_Oh_1.wav" id="60_0nmax"]
+[ext_resource type="AudioStream" uid="uid://btdp8d3fgvg7w" path="res://Audio/VO/Trista/VO_TristaEfforts_Oh_2.wav" id="61_gjr7k"]
+[ext_resource type="AudioStream" uid="uid://bequ7gxrhwxud" path="res://Audio/VO/Trista/VO_TristaEfforts_Oh_3.wav" id="62_21s52"]
+[ext_resource type="AudioStream" uid="uid://ot57ljpho74w" path="res://Audio/VO/Trista/VO_TristaEfforts_Oh_4.wav" id="63_1pr8v"]
+[ext_resource type="AudioStream" uid="uid://c3rujluywbp4" path="res://Audio/VO/Trista/VO_TristaEfforts_Penelopeee_1.wav" id="64_fwf5q"]
+[ext_resource type="AudioStream" uid="uid://b1haillflws6i" path="res://Audio/VO/Trista/VO_TristaEfforts_Penelopeee_2.wav" id="65_d0vf4"]
+[ext_resource type="AudioStream" uid="uid://dqbrh8c1bhmge" path="res://Audio/VO/Trista/VO_TristaEfforts_Penelopeee_3.wav" id="66_2kvsm"]
+[ext_resource type="AudioStream" uid="uid://dxq74xo0xbc38" path="res://Audio/VO/Trista/VO_TristaEfforts_PenelopeStirling_1.wav" id="67_djb8h"]
+[ext_resource type="AudioStream" uid="uid://bdpo4rq316lih" path="res://Audio/VO/Trista/VO_TristaEfforts_PenelopeStirling_2.wav" id="68_8m7sh"]
+[ext_resource type="AudioStream" uid="uid://c5afkq7w1ffb7" path="res://Audio/VO/Trista/VO_TristaEfforts_PenelopeStirling_3.wav" id="69_ewbpy"]
+[ext_resource type="AudioStream" uid="uid://bn6b0onij5p2d" path="res://Audio/VO/Trista/VO_TristaEfforts_PenelopeStirling_4.wav" id="70_fl5ih"]
+[ext_resource type="AudioStream" uid="uid://6vdrovhtsabr" path="res://Audio/VO/Trista/VO_TristaEfforts_Pennyyy_1.wav" id="71_tkf2o"]
+[ext_resource type="AudioStream" uid="uid://dlp7i44jkd5mb" path="res://Audio/VO/Trista/VO_TristaEfforts_Pennyyy_2.wav" id="72_plogl"]
+[ext_resource type="AudioStream" uid="uid://c3qpo0367wdtv" path="res://Audio/VO/Trista/VO_TristaEfforts_Pennyyy_3.wav" id="73_y8yjs"]
+[ext_resource type="AudioStream" uid="uid://ddmlef2wjng0" path="res://Audio/VO/Trista/VO_TristaEfforts_Pennyyy_4.wav" id="74_v3a1l"]
+[ext_resource type="AudioStream" uid="uid://dw3r1tbroaxsv" path="res://Audio/VO/Trista/VO_TristaEfforts_Sighs_1.wav" id="75_wljqp"]
+[ext_resource type="AudioStream" uid="uid://chrtllgx27po0" path="res://Audio/VO/Trista/VO_TristaEfforts_Sighs_2.wav" id="76_1qhh3"]
+[ext_resource type="AudioStream" uid="uid://qbajxwh8trtx" path="res://Audio/VO/Trista/VO_TristaEfforts_Sighs_3.wav" id="77_44246"]
+[ext_resource type="AudioStream" uid="uid://dp27dlfrit035" path="res://Audio/VO/Trista/VO_TristaEfforts_Trissss_1.wav" id="78_wgl8f"]
+[ext_resource type="AudioStream" uid="uid://b16mtbc0ysa06" path="res://Audio/VO/Trista/VO_TristaEfforts_Trissss_2.wav" id="79_hpaem"]
+[ext_resource type="AudioStream" uid="uid://bjd8fqucxb6a0" path="res://Audio/VO/Trista/VO_TristaEfforts_Trissss_3.wav" id="80_ec3ld"]
+[ext_resource type="AudioStream" uid="uid://b8fujaqod3exa" path="res://Audio/VO/Trista/VO_TristaEfforts_Umm_1.wav" id="81_7d5i6"]
+[ext_resource type="AudioStream" uid="uid://cw63tpm1vwmvv" path="res://Audio/VO/Trista/VO_TristaEfforts_Umm_2.wav" id="82_godpv"]
+[ext_resource type="AudioStream" uid="uid://4rkn44xa63e8" path="res://Audio/VO/Trista/VO_TristaEfforts_Umm_3.wav" id="83_y7raw"]
+[ext_resource type="AudioStream" uid="uid://b8u87cyc0wvhm" path="res://Audio/VO/Trista/VO_TristaEfforts_Umm_4.wav" id="84_f5803"]
+[ext_resource type="AudioStream" uid="uid://djdnp6h2jcttt" path="res://Audio/VO/Trista/VO_TristaEfforts_What_1.wav" id="85_x85t8"]
+[ext_resource type="AudioStream" uid="uid://eiflvijfw3wk" path="res://Audio/VO/Trista/VO_TristaEfforts_What_2.wav" id="86_5dldy"]
+[ext_resource type="AudioStream" uid="uid://wdb26l52du0h" path="res://Audio/VO/Trista/VO_TristaEfforts_What_3.wav" id="87_w3jmt"]
+[ext_resource type="AudioStream" uid="uid://dodyijky5tnta" path="res://Audio/VO/Trista/VO_TristaEfforts_What_4.wav" id="88_1d8un"]
+[ext_resource type="AudioStream" uid="uid://6q7034oqgxrk" path="res://Audio/VO/Trista/VO_TristaEfforts_What_5.wav" id="89_e5a8h"]
+[ext_resource type="AudioStream" uid="uid://c6mp2qyted3yu" path="res://Audio/VO/Trista/VO_TristaEfforts_What_6.wav" id="90_rihvm"]
+[ext_resource type="AudioStream" uid="uid://eomvmemhe43" path="res://Audio/VO/Trista/VO_TristaEfforts_Yeah_1.wav" id="91_lrgye"]
+[ext_resource type="AudioStream" uid="uid://dba4jgfymx2xo" path="res://Audio/VO/Trista/VO_TristaEfforts_Yeah_2.wav" id="92_ph7ew"]
+[ext_resource type="AudioStream" uid="uid://b4w2j5kopb2a6" path="res://Audio/VO/Trista/VO_TristaEfforts_Yeah_3.wav" id="93_xiygt"]
+[ext_resource type="AudioStream" uid="uid://gdukeuv5rb3c" path="res://Audio/VO/Trista/VO_TristaEfforts_Yeah_4.wav" id="94_5dknq"]
+[ext_resource type="AudioStream" uid="uid://b4k6cg4fjyldf" path="res://Audio/VO/Trista/VO_TristaEfforts_Yeah_5.wav" id="95_7r660"]
+[ext_resource type="AudioStream" uid="uid://bmtuurjcop25w" path="res://Audio/VO/Trista/VO_Trista_AttentionProtocol_1.wav" id="96_3h3w2"]
+[ext_resource type="AudioStream" uid="uid://cjx71lts6k5sj" path="res://Audio/VO/Trista/VO_Trista_AttentionProtocol_2.wav" id="97_2emmw"]
+[ext_resource type="AudioStream" uid="uid://d11qljar0fg61" path="res://Audio/VO/Trista/VO_Trista_DidntWantThis_1.wav" id="98_3s3b6"]
+[ext_resource type="AudioStream" uid="uid://nak2aj2pklnv" path="res://Audio/VO/Trista/VO_Trista_DidntWantThis_2.wav" id="99_fu086"]
+[ext_resource type="AudioStream" uid="uid://4lo7mcq7p0wb" path="res://Audio/VO/Trista/VO_Trista_GaspPenelope_1.wav" id="100_skgob"]
+[ext_resource type="AudioStream" uid="uid://cmxnnjcvq3ub" path="res://Audio/VO/Trista/VO_Trista_GaspPenelope_2.wav" id="101_gm45k"]
+[ext_resource type="AudioStream" uid="uid://csb3y4gtsdbjj" path="res://Audio/VO/Trista/VO_Trista_GaspPenelope_3.wav" id="102_qp2i1"]
+[ext_resource type="AudioStream" uid="uid://ydck3rn4br3" path="res://Audio/VO/Trista/VO_Trista_GaspPenny_1.wav" id="103_ecoda"]
+[ext_resource type="AudioStream" uid="uid://dtaeiwmhud2d1" path="res://Audio/VO/Trista/VO_Trista_GaspPenny_2.wav" id="104_rwpsy"]
+[ext_resource type="AudioStream" uid="uid://4f2avvmm52tl" path="res://Audio/VO/Trista/VO_Trista_GaspPenny_3.wav" id="105_y64ll"]
+[ext_resource type="AudioStream" uid="uid://bfuq6fl2i5yoh" path="res://Audio/VO/Trista/VO_Trista_GenuinelyFriend_1.wav" id="106_6timi"]
+[ext_resource type="AudioStream" uid="uid://c72ytf671d431" path="res://Audio/VO/Trista/VO_Trista_GenuinelyFriend_2.wav" id="107_s88g3"]
+[ext_resource type="AudioStream" uid="uid://3uhx5v3ubcu8" path="res://Audio/VO/Trista/VO_Trista_GoodJob_1.wav" id="108_r0hdf"]
+[ext_resource type="AudioStream" uid="uid://7j6wjlx0gdsx" path="res://Audio/VO/Trista/VO_Trista_GoodJob_2.wav" id="109_0q1qu"]
+[ext_resource type="AudioStream" uid="uid://bph1xd4oh3ch3" path="res://Audio/VO/Trista/VO_Trista_GoodJob_3.wav" id="110_i6f1l"]
+[ext_resource type="AudioStream" uid="uid://cjog08smehori" path="res://Audio/VO/Trista/VO_Trista_PerfectNotJustSoldier_1.wav" id="111_v8rlx"]
+[ext_resource type="AudioStream" uid="uid://y0nra5mipxv3" path="res://Audio/VO/Trista/VO_Trista_PerfectNotJustSoldier_2.wav" id="112_o4gg6"]
+[ext_resource type="AudioStream" uid="uid://bhxcvu7f28f0s" path="res://Audio/VO/Trista/VO_Trista_Yawn_1.wav" id="113_62eyh"]
+[ext_resource type="AudioStream" uid="uid://dmfgkindf061r" path="res://Audio/VO/Trista/VO_Trista_Yawn_2.wav" id="114_qtuqr"]
+[ext_resource type="AudioStream" uid="uid://b2xd61vmq2v2f" path="res://Audio/VO/Instructor/VO_Instructor_20DickPushUps.wav" id="115_hxusp"]
+[ext_resource type="AudioStream" uid="uid://dpj4msr2d8s5j" path="res://Audio/VO/Instructor/VO_Instructor_CovetedFire.wav" id="116_e7xo0"]
+[ext_resource type="AudioStream" uid="uid://ch8mdhukuthdw" path="res://Audio/VO/Instructor/VO_Instructor_GoodWork.wav" id="117_73qgt"]
+[ext_resource type="AudioStream" uid="uid://dk228m2yjp3dn" path="res://Audio/VO/Instructor/VO_Instructor_PayAttention.wav" id="118_76ow4"]
+[ext_resource type="AudioStream" uid="uid://hhd3syb5wf6q" path="res://Audio/VO/Instructor/VO_Instructor_RepeatSAP.wav" id="119_6ymuj"]
 
 [node name="AudioManager" type="Node"]
 script = ExtResource("1_2qak2")
@@ -53,6 +162,442 @@ bus = &"SFX"
 [node name="SFX_UITONE_Chime_Trista" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_r82ln")
 bus = &"SFX"
+
+[node name="VO_PENELOPE_Serious_Hmm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_12cbs")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Curious_Hmm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_tuy5i")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Curious_Huh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_ygaol")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Realize_Huh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_2x30j")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Realize_Huh_2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_kshc6")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Disbelief_What" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_87yhy")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Disbelief_What_2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_te61b")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Serious_What" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_n5tnd")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Unsure_Oh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_ijber")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Realize_Oh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20_vxsdn")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Annoyed_Oh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_x4viu")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Sigh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_phxqb")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Sigh_2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23_csiyp")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Sigh_3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_4wcoh")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Yes_Sigh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_jj6ha")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Yes_Sigh_2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_wr1of")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Yes_Happy" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_o2727")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Yes_Happy_2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("28_t30uw")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Ending_Bad" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29_5otlq")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Ending_Neutral" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30_olkdc")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Ending_Good" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31_ibfty")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Opening_Idiot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("32_t6g65")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Opening_IronCapella" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("33_jk02i")
+bus = &"Voice"
+
+[node name="VO_PENELOPE_Opening_MakeChoice" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("34_scg3w")
+bus = &"Voice"
+
+[node name="VoPenelopeScene1Triss" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("35_3clmt")
+bus = &"Voice"
+
+[node name="VoPenelopeScene2StrainedPeneloNoises" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36_fxgcg")
+bus = &"Voice"
+
+[node name="VoPenelopeScene3JustWantedToSay" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37_m6hcv")
+bus = &"Voice"
+
+[node name="VoPenelopeScene3LongMonthCheers" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("38_7ekjn")
+bus = &"Voice"
+
+[node name="VoPenelopeScene3What" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("39_16d7u")
+bus = &"Voice"
+
+[node name="VoPenelopeScene4ImDone" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("40_k3adg")
+bus = &"Voice"
+
+[node name="VoPenelopeScene4YouAlwaysThoughtSimp" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("41_j35yx")
+bus = &"Voice"
+
+[node name="VoTristaEffortsAhck1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("42_vydh3")
+bus = &"Voice"
+
+[node name="VoTristaEffortsAhck2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("43_h5x82")
+bus = &"Voice"
+
+[node name="VoTristaEffortsAhck3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("44_685i0")
+bus = &"Voice"
+
+[node name="VoTristaEffortsGrr1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("45_7d56h")
+bus = &"Voice"
+
+[node name="VoTristaEffortsGrr2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("46_a5st6")
+bus = &"Voice"
+
+[node name="VoTristaEffortsGrr3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("47_x45uw")
+bus = &"Voice"
+
+[node name="VoTristaEffortsHmmm1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("48_n6r1l")
+bus = &"Voice"
+
+[node name="VoTristaEffortsHmmm2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("49_ambsn")
+bus = &"Voice"
+
+[node name="VoTristaEffortsHmmm3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("50_nq2ar")
+bus = &"Voice"
+
+[node name="VoTristaEffortsHuh1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("51_rsbsx")
+bus = &"Voice"
+
+[node name="VoTristaEffortsHuh2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("52_2fnd0")
+bus = &"Voice"
+
+[node name="VoTristaEffortsHuh3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("53_b0u26")
+bus = &"Voice"
+
+[node name="VoTristaEffortsKyah1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("54_ivcwf")
+bus = &"Voice"
+
+[node name="VoTristaEffortsKyah2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("55_66aff")
+bus = &"Voice"
+
+[node name="VoTristaEffortsKyah3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("56_phs32")
+bus = &"Voice"
+
+[node name="VoTristaEffortsLaughsInHahas1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("57_u6ste")
+bus = &"Voice"
+
+[node name="VoTristaEffortsLaughsInHahas2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("58_w0rl3")
+bus = &"Voice"
+
+[node name="VoTristaEffortsLaughsInHahas3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("59_ctekv")
+bus = &"Voice"
+
+[node name="VoTristaEffortsOh1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("60_0nmax")
+bus = &"Voice"
+
+[node name="VoTristaEffortsOh2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("61_gjr7k")
+bus = &"Voice"
+
+[node name="VoTristaEffortsOh3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("62_21s52")
+bus = &"Voice"
+
+[node name="VoTristaEffortsOh4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("63_1pr8v")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPenelopeee1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("64_fwf5q")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPenelopeee2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("65_d0vf4")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPenelopeee3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("66_2kvsm")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPenelopeStirling1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("67_djb8h")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPenelopeStirling2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("68_8m7sh")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPenelopeStirling3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("69_ewbpy")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPenelopeStirling4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("70_fl5ih")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPennyyy1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("71_tkf2o")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPennyyy2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("72_plogl")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPennyyy3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("73_y8yjs")
+bus = &"Voice"
+
+[node name="VoTristaEffortsPennyyy4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("74_v3a1l")
+bus = &"Voice"
+
+[node name="VoTristaEffortsSighs1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("75_wljqp")
+bus = &"Voice"
+
+[node name="VoTristaEffortsSighs2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("76_1qhh3")
+bus = &"Voice"
+
+[node name="VoTristaEffortsSighs3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("77_44246")
+bus = &"Voice"
+
+[node name="VoTristaEffortsTrissss1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("78_wgl8f")
+bus = &"Voice"
+
+[node name="VoTristaEffortsTrissss2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("79_hpaem")
+bus = &"Voice"
+
+[node name="VoTristaEffortsTrissss3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("80_ec3ld")
+bus = &"Voice"
+
+[node name="VoTristaEffortsUmm1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("81_7d5i6")
+bus = &"Voice"
+
+[node name="VoTristaEffortsUmm2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("82_godpv")
+bus = &"Voice"
+
+[node name="VoTristaEffortsUmm3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("83_y7raw")
+bus = &"Voice"
+
+[node name="VoTristaEffortsUmm4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("84_f5803")
+bus = &"Voice"
+
+[node name="VoTristaEffortsWhat1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("85_x85t8")
+bus = &"Voice"
+
+[node name="VoTristaEffortsWhat2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("86_5dldy")
+bus = &"Voice"
+
+[node name="VoTristaEffortsWhat3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("87_w3jmt")
+bus = &"Voice"
+
+[node name="VoTristaEffortsWhat4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("88_1d8un")
+bus = &"Voice"
+
+[node name="VoTristaEffortsWhat5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("89_e5a8h")
+bus = &"Voice"
+
+[node name="VoTristaEffortsWhat6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("90_rihvm")
+bus = &"Voice"
+
+[node name="VoTristaEffortsYeah1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("91_lrgye")
+bus = &"Voice"
+
+[node name="VoTristaEffortsYeah2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("92_ph7ew")
+bus = &"Voice"
+
+[node name="VoTristaEffortsYeah3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("93_xiygt")
+bus = &"Voice"
+
+[node name="VoTristaEffortsYeah4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("94_5dknq")
+bus = &"Voice"
+
+[node name="VoTristaEffortsYeah5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("95_7r660")
+bus = &"Voice"
+
+[node name="VoTristaAttentionProtocol1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("96_3h3w2")
+bus = &"Voice"
+
+[node name="VoTristaAttentionProtocol2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("97_2emmw")
+bus = &"Voice"
+
+[node name="VoTristaDidntWantThis1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("98_3s3b6")
+bus = &"Voice"
+
+[node name="VoTristaDidntWantThis2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("99_fu086")
+bus = &"Voice"
+
+[node name="VoTristaGaspPenelope1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("100_skgob")
+bus = &"Voice"
+
+[node name="VoTristaGaspPenelope2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("101_gm45k")
+bus = &"Voice"
+
+[node name="VoTristaGaspPenelope3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("102_qp2i1")
+bus = &"Voice"
+
+[node name="VoTristaGaspPenny1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("103_ecoda")
+bus = &"Voice"
+
+[node name="VoTristaGaspPenny2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("104_rwpsy")
+bus = &"Voice"
+
+[node name="VoTristaGaspPenny3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("105_y64ll")
+bus = &"Voice"
+
+[node name="VoTristaGenuinelyFriend1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("106_6timi")
+bus = &"Voice"
+
+[node name="VoTristaGenuinelyFriend2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("107_s88g3")
+bus = &"Voice"
+
+[node name="VoTristaGoodJob1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("108_r0hdf")
+bus = &"Voice"
+
+[node name="VoTristaGoodJob2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("109_0q1qu")
+bus = &"Voice"
+
+[node name="VoTristaGoodJob3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("110_i6f1l")
+bus = &"Voice"
+
+[node name="VoTristaPerfectNotJustSoldier1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("111_v8rlx")
+bus = &"Voice"
+
+[node name="VoTristaPerfectNotJustSoldier2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("112_o4gg6")
+bus = &"Voice"
+
+[node name="VoTristaYawn1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("113_62eyh")
+bus = &"Voice"
+
+[node name="VoTristaYawn2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("114_qtuqr")
+bus = &"Voice"
+
+[node name="VoInstructor20DickPushUps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("115_hxusp")
+bus = &"Voice"
+
+[node name="VoInstructorCovetedFire" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("116_e7xo0")
+bus = &"Voice"
+
+[node name="VoInstructorGoodWork" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("117_73qgt")
+bus = &"Voice"
+
+[node name="VoInstructorPayAttention" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("118_76ow4")
+bus = &"Voice"
+
+[node name="VoInstructorRepeatSap" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("119_6ymuj")
+bus = &"Voice"
 
 [node name="Music_AmbientTheme_1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_b7ii2")
