@@ -1,0 +1,125 @@
+[gd_scene load_steps=17 format=3 uid="uid://ct3a5lnxtna7h"]
+
+[ext_resource type="Script" path="res://pages/page_4b.gd" id="1_foanu"]
+[ext_resource type="Texture2D" uid="uid://drfpd2vygusy2" path="res://assets/panels/library_bad/BadLibrary_1.png" id="1_udcgi"]
+[ext_resource type="Texture2D" uid="uid://xubay551weed" path="res://assets/panels/library_bad/BadLibrary_2.png" id="2_v6e7o"]
+[ext_resource type="Texture2D" uid="uid://de3gvntg6gnf" path="res://assets/panels/library_bad/BadLibrary_1_text1.png" id="3_jno3x"]
+[ext_resource type="Texture2D" uid="uid://ud250axd7ker" path="res://assets/panels/library_bad/BadLibrary_3.png" id="4_846ru"]
+[ext_resource type="Texture2D" uid="uid://c8u6r422jxpcf" path="res://assets/panels/library_bad/BadLibrary_3_text1.png" id="5_ph66h"]
+[ext_resource type="Texture2D" uid="uid://kr4crimpo4wq" path="res://assets/panels/library_bad/BadLibrary_3_text2.png" id="6_eo7tc"]
+[ext_resource type="Texture2D" uid="uid://di24l26m1acma" path="res://assets/panels/library_bad/BadLibrary_4.png" id="7_vlm8y"]
+[ext_resource type="Texture2D" uid="uid://d2vhjg3f6hate" path="res://assets/panels/library_bad/BadLibrary_5.png" id="8_gpfja"]
+[ext_resource type="Texture2D" uid="uid://cm6cam3xncih7" path="res://assets/panels/library_bad/BadLibrary_6.png" id="9_5fm1p"]
+[ext_resource type="Texture2D" uid="uid://logx6qgqxbdj" path="res://assets/panels/library_bad/BadLibrary_7.png" id="10_tvs10"]
+[ext_resource type="Texture2D" uid="uid://cropcov3o3fa4" path="res://assets/panels/library_bad/BadLibrary_7_text1.png" id="11_ty4pg"]
+[ext_resource type="Texture2D" uid="uid://dtp0bveljq2jx" path="res://assets/panels/library_bad/BadLibrary_7_text2.png" id="12_e1enf"]
+[ext_resource type="Texture2D" uid="uid://clptf322p6s4i" path="res://assets/panels/library_bad/BadLibrary_9.png" id="14_4c35l"]
+[ext_resource type="Texture2D" uid="uid://cn8v7hv0t84bg" path="res://assets/panels/library_bad/BadLibrary_8_text1.png" id="15_66got"]
+[ext_resource type="Texture2D" uid="uid://dhqbvl34b0cob" path="res://assets/panels/library_bad/BadLibrary_10.png" id="16_ef5pj"]
+
+[node name="Page4B" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_foanu")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 960.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BadLibrary1" type="Sprite2D" parent="Panels"]
+position = Vector2(279, 235)
+texture = ExtResource("1_udcgi")
+
+[node name="BadLibrary2" type="Sprite2D" parent="Panels"]
+position = Vector2(519, 337)
+scale = Vector2(0.84, 0.84)
+texture = ExtResource("2_v6e7o")
+
+[node name="BadLibrary1Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(388, 230)
+texture = ExtResource("3_jno3x")
+
+[node name="BadLibrary3" type="Sprite2D" parent="Panels"]
+position = Vector2(478, 744)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_846ru")
+
+[node name="BadLibrary3Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(420, 617)
+scale = Vector2(0.84, 0.84)
+texture = ExtResource("5_ph66h")
+
+[node name="BadLibrary3Text2" type="Sprite2D" parent="Panels"]
+position = Vector2(867, 728)
+scale = Vector2(0.84, 0.84)
+texture = ExtResource("6_eo7tc")
+
+[node name="BadLibrary4" type="Sprite2D" parent="Panels"]
+position = Vector2(1161, 276)
+scale = Vector2(0.880005, 0.880005)
+texture = ExtResource("7_vlm8y")
+
+[node name="BadLibrary5" type="Sprite2D" parent="Panels"]
+position = Vector2(1641, 254)
+scale = Vector2(0.52, 0.52)
+texture = ExtResource("8_gpfja")
+
+[node name="BadLibrary6" type="Sprite2D" parent="Panels"]
+position = Vector2(1152, 671)
+scale = Vector2(0.68, 0.68)
+texture = ExtResource("9_5fm1p")
+
+[node name="BadLibrary7" type="Sprite2D" parent="Panels"]
+position = Vector2(1584, 769)
+scale = Vector2(0.56, 0.56)
+texture = ExtResource("10_tvs10")
+
+[node name="BadLibrary7Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(1403, 731)
+texture = ExtResource("11_ty4pg")
+
+[node name="BadLibrary7Text2" type="Sprite2D" parent="Panels"]
+position = Vector2(1801, 582)
+texture = ExtResource("12_e1enf")
+
+[node name="Background2" type="ColorRect" parent="Panels"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 960.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="BadLibrary9" type="Sprite2D" parent="Panels"]
+position = Vector2(475, 539)
+texture = ExtResource("14_4c35l")
+
+[node name="BadLibrary8Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(637, 230)
+scale = Vector2(0.839999, 0.839999)
+texture = ExtResource("15_66got")
+
+[node name="BadLibrary10" type="Sprite2D" parent="Panels"]
+position = Vector2(1418, 565)
+scale = Vector2(0.919995, 0.919995)
+texture = ExtResource("16_ef5pj")

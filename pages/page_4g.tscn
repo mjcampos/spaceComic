@@ -1,0 +1,104 @@
+[gd_scene load_steps=16 format=3 uid="uid://73ngm1ow3ynj"]
+
+[ext_resource type="Script" path="res://pages/page_4g.gd" id="1_atbvv"]
+[ext_resource type="Texture2D" uid="uid://bqpcf7iyvkusa" path="res://assets/panels/cafeteria_good/GoodCafeteria_1.png" id="2_mkcwg"]
+[ext_resource type="Texture2D" uid="uid://brpn0cqe0hwxo" path="res://assets/panels/cafeteria_good/GoodCafeteria_1_text1.png" id="3_eu0qy"]
+[ext_resource type="Texture2D" uid="uid://bnbtwbid6a4j7" path="res://assets/panels/cafeteria_good/GoodCafeteria_2.png" id="4_sjj7s"]
+[ext_resource type="Texture2D" uid="uid://dbc082hd735p7" path="res://assets/panels/cafeteria_good/GoodCafeteria_3.png" id="5_8c6ni"]
+[ext_resource type="Texture2D" uid="uid://clu5keyklhdd" path="res://assets/panels/cafeteria_good/GoodCafeteria_4.png" id="6_uypoq"]
+[ext_resource type="Texture2D" uid="uid://ckia836ns5okg" path="res://assets/panels/cafeteria_good/GoodCafeteria_4_DB.png" id="7_j86s4"]
+[ext_resource type="Texture2D" uid="uid://cd4lqbs81otmm" path="res://assets/panels/cafeteria_good/GoodCafeteria_4_text1.png" id="8_31pty"]
+[ext_resource type="Texture2D" uid="uid://clqvypjx7u6kv" path="res://assets/panels/cafeteria_good/GoodCafeteria_B_5.png" id="9_1jqq5"]
+[ext_resource type="Texture2D" uid="uid://c06j86yw4laad" path="res://assets/panels/cafeteria_good/GoodCafeteria_5_text1.png" id="10_0gyxi"]
+[ext_resource type="Texture2D" uid="uid://t1ucws0kqq25" path="res://assets/panels/cafeteria_good/GoodCafeteria_6.png" id="11_vb3eb"]
+[ext_resource type="Texture2D" uid="uid://c2b3i1n28841d" path="res://assets/panels/cafeteria_good/GoodCafeteria_6_text1.png" id="12_arwwu"]
+[ext_resource type="Texture2D" uid="uid://bgcgo8fip41bq" path="res://assets/panels/cafeteria_good/GoodCafeteria_6_text2.png" id="13_cbhse"]
+[ext_resource type="Texture2D" uid="uid://i872xp34r5p" path="res://assets/panels/cafeteria_good/GoodCafeteria_8.png" id="14_qyr1x"]
+[ext_resource type="Texture2D" uid="uid://c48nejpov2fsk" path="res://assets/panels/cafeteria_good/GoodCafeteria_7.png" id="15_46l4q"]
+
+[node name="Page4G" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_atbvv")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 960.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GoodCafeteria1" type="Sprite2D" parent="Panels"]
+position = Vector2(234, 270)
+texture = ExtResource("2_mkcwg")
+
+[node name="GoodCafeteria1Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(94, 126)
+texture = ExtResource("3_eu0qy")
+
+[node name="GoodCafeteria2" type="Sprite2D" parent="Panels"]
+position = Vector2(547, 277)
+texture = ExtResource("4_sjj7s")
+
+[node name="GoodCafeteria3" type="Sprite2D" parent="Panels"]
+position = Vector2(794, 258)
+texture = ExtResource("5_8c6ni")
+
+[node name="GoodCafeteria4" type="Sprite2D" parent="Panels"]
+position = Vector2(469, 796)
+scale = Vector2(0.76, 0.76)
+texture = ExtResource("6_uypoq")
+
+[node name="GoodCafeteria4Db" type="Sprite2D" parent="Panels"]
+position = Vector2(428, 721)
+texture = ExtResource("7_j86s4")
+
+[node name="GoodCafeteria4Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(438, 583)
+scale = Vector2(0.840001, 0.840001)
+texture = ExtResource("8_31pty")
+
+[node name="GoodCafeteriaB5" type="Sprite2D" parent="Panels"]
+position = Vector2(1191, 271)
+texture = ExtResource("9_1jqq5")
+
+[node name="GoodCafeteria5Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(1050, 145)
+texture = ExtResource("10_0gyxi")
+
+[node name="GoodCafeteria6" type="Sprite2D" parent="Panels"]
+position = Vector2(1644, 340)
+texture = ExtResource("11_vb3eb")
+
+[node name="GoodCafeteria6Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(1459, 154)
+texture = ExtResource("12_arwwu")
+
+[node name="GoodCafeteria6Text2" type="Sprite2D" parent="Panels"]
+position = Vector2(1836, 392)
+texture = ExtResource("13_cbhse")
+
+[node name="GoodCafeteria8" type="Sprite2D" parent="Panels"]
+position = Vector2(1484, 795)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("14_qyr1x")
+
+[node name="GoodCafeteria7" type="Sprite2D" parent="Panels"]
+position = Vector2(1190, 702)
+scale = Vector2(0.840002, 0.840002)
+texture = ExtResource("15_46l4q")

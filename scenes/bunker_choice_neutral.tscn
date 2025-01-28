@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://lrrqhud3acwr"]
 
-[ext_resource type="Texture2D" uid="uid://cxtrpkl7esys2" path="res://assets/panels/BunkerNeutral/NeutralBunker_1.png" id="1_7lk5o"]
-[ext_resource type="Texture2D" uid="uid://cxisitnfs12ta" path="res://assets/panels/BunkerNeutral/NeutralBunker_2.png" id="2_3um1c"]
-[ext_resource type="Texture2D" uid="uid://calcx84so2d06" path="res://assets/panels/BunkerNeutral/NeutralBunker_3.png" id="3_76okd"]
-[ext_resource type="Texture2D" uid="uid://wguk5o4q0oh1" path="res://assets/panels/BunkerNeutral/NeutralBunker_4.png" id="4_vssid"]
-[ext_resource type="Texture2D" uid="uid://boqejcvsris73" path="res://assets/panels/BunkerNeutral/NeutralBunker_5.png" id="5_qyn4n"]
-[ext_resource type="Texture2D" uid="uid://n6x1t0nyil84" path="res://assets/panels/BunkerNeutral/NeutralBunker_6.png" id="6_yymfq"]
-[ext_resource type="Texture2D" uid="uid://moudbk81udpb" path="res://assets/panels/BunkerNeutral/NeutralBunker_7.png" id="7_l0qus"]
-[ext_resource type="Texture2D" uid="uid://81uvdixsnhul" path="res://assets/panels/BunkerNeutral/NeutralBunker_8.png" id="8_8w6nk"]
+[ext_resource type="Texture2D" uid="uid://cxtrpkl7esys2" path="res://assets/panels/bunker_neutral/NeutralBunker_1.png" id="1_7lk5o"]
+[ext_resource type="Texture2D" uid="uid://cxisitnfs12ta" path="res://assets/panels/bunker_neutral/NeutralBunker_2.png" id="2_3um1c"]
+[ext_resource type="Texture2D" uid="uid://calcx84so2d06" path="res://assets/panels/bunker_neutral/NeutralBunker_3.png" id="3_76okd"]
+[ext_resource type="Texture2D" uid="uid://wguk5o4q0oh1" path="res://assets/panels/bunker_neutral/NeutralBunker_4.png" id="4_vssid"]
+[ext_resource type="Texture2D" uid="uid://boqejcvsris73" path="res://assets/panels/bunker_neutral/NeutralBunker_5.png" id="5_qyn4n"]
+[ext_resource type="Texture2D" uid="uid://n6x1t0nyil84" path="res://assets/panels/bunker_neutral/NeutralBunker_6.png" id="6_yymfq"]
+[ext_resource type="Texture2D" uid="uid://moudbk81udpb" path="res://assets/panels/bunker_neutral/NeutralBunker_7.png" id="7_l0qus"]
+[ext_resource type="Texture2D" uid="uid://81uvdixsnhul" path="res://assets/panels/bunker_neutral/NeutralBunker_8.png" id="8_8w6nk"]
 
 [node name="BunkerChoiceNeutral" type="Control"]
 layout_mode = 3

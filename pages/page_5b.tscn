@@ -1,0 +1,336 @@
+[gd_scene load_steps=54 format=3 uid="uid://cyebkoxl2axg6"]
+
+[ext_resource type="Script" path="res://pages/page_5b.gd" id="1_fs5pb"]
+[ext_resource type="Texture2D" uid="uid://cyseb35v0584o" path="res://assets/panels/bunker_bad/Storyboards/Bad Bunker Storyboard 2_B.png" id="3_7gt2q"]
+[ext_resource type="Texture2D" uid="uid://c313k31k8w01l" path="res://assets/panels/bunker_bad/Storyboards/Bad Bunker Storyboard 2_G.png" id="4_8feqq"]
+[ext_resource type="Texture2D" uid="uid://cnarj2ux4v06t" path="res://assets/panels/bunker_bad/Storyboards/Bad Bunker Storyboard 2_N.png" id="5_mxfs7"]
+[ext_resource type="Texture2D" uid="uid://bmyb3qft5os3s" path="res://assets/panels/bunker_bad/Storyboards/Bad Bunker Storyboard 3.png" id="6_0qb3k"]
+[ext_resource type="Texture2D" uid="uid://q1u4ss10f10i" path="res://assets/panels/bunker_bad/BadBunker_1.png" id="7_lj335"]
+[ext_resource type="Texture2D" uid="uid://by52vmw1ifsh" path="res://assets/panels/bunker_bad/BadBunker_2.png" id="8_tcamv"]
+[ext_resource type="Texture2D" uid="uid://ddw3kwh0wv1fv" path="res://assets/panels/bunker_bad/BadBunker_3.png" id="9_rtyk5"]
+[ext_resource type="Texture2D" uid="uid://h0ple7qbqf8p" path="res://assets/panels/bunker_bad/BadBunker_3_text1.png" id="10_k7bnm"]
+[ext_resource type="Texture2D" uid="uid://hko4lw87fr4h" path="res://assets/panels/bunker_bad/BadBunker_4.png" id="11_at3p1"]
+[ext_resource type="Texture2D" uid="uid://di71pgw7jy41l" path="res://assets/panels/bunker_bad/BadBunker_4_text1.png" id="12_sd8fu"]
+[ext_resource type="Texture2D" uid="uid://bvr70x62eyk4d" path="res://assets/panels/bunker_bad/BadBunker_4_text2.png" id="13_l5p4t"]
+[ext_resource type="Texture2D" uid="uid://ew3v6o50euss" path="res://assets/panels/bunker_bad/BadBunker_5.png" id="14_ra0ti"]
+[ext_resource type="Texture2D" uid="uid://brohfaoj8pscq" path="res://assets/panels/bunker_bad/BadBunker_5_text1.png" id="15_kj4fq"]
+[ext_resource type="Texture2D" uid="uid://qjkr7usdldo8" path="res://assets/panels/bunker_bad/BadBunker_6.png" id="16_ug7mh"]
+[ext_resource type="Texture2D" uid="uid://dbn2vkktjs3x2" path="res://assets/panels/bunker_bad/BadBunker_6_text1.png" id="17_ormyh"]
+[ext_resource type="Texture2D" uid="uid://i15x8t6307qm" path="res://assets/panels/bunker_bad/BadBunker_7.png" id="18_xifh8"]
+[ext_resource type="Texture2D" uid="uid://ckvj20ifytsdb" path="res://assets/panels/bunker_bad/BadBunker_8.png" id="19_fbrdc"]
+[ext_resource type="Texture2D" uid="uid://cgd7mjkba4xcj" path="res://assets/panels/bunker_bad/BadBunker_8_B_10.png" id="20_jpb6g"]
+[ext_resource type="Texture2D" uid="uid://cfe2t5caq7a65" path="res://assets/panels/bunker_bad/BadBunker_8_DB.png" id="21_xl8s7"]
+[ext_resource type="Texture2D" uid="uid://bbyq6b5u8jm83" path="res://assets/panels/bunker_bad/BadBunker_8_DG.png" id="22_gebbn"]
+[ext_resource type="Texture2D" uid="uid://djwgoajehf4y3" path="res://assets/panels/bunker_bad/BadBunker_8_DN.png" id="23_g43g8"]
+[ext_resource type="Texture2D" uid="uid://d2nbmuas3k08h" path="res://assets/panels/bunker_bad/BadBunker_8_text1.png" id="24_dp5hs"]
+[ext_resource type="Texture2D" uid="uid://wa6jffgfdcmp" path="res://assets/panels/bunker_bad/BadBunker_12.png" id="25_bv3vm"]
+[ext_resource type="Texture2D" uid="uid://dlxe5wmp12ff6" path="res://assets/panels/bunker_bad/BadBunker_12_text1.png" id="26_n532k"]
+[ext_resource type="Texture2D" uid="uid://6dypnjbwwi3q" path="res://assets/panels/bunker_bad/BadBunker_13.png" id="27_b6yjq"]
+[ext_resource type="Texture2D" uid="uid://dypmmejls148o" path="res://assets/panels/bunker_bad/BadBunker_13_text1.png" id="28_kvjq3"]
+[ext_resource type="Texture2D" uid="uid://cc2f6udim1e0x" path="res://assets/panels/bunker_bad/BadBunker_14.png" id="29_5fub2"]
+[ext_resource type="Texture2D" uid="uid://2pv5obnlcohe" path="res://assets/panels/bunker_bad/BadBunker_14_text1.png" id="30_otolo"]
+[ext_resource type="Texture2D" uid="uid://d0j3fhglq6ov3" path="res://assets/panels/bunker_bad/BadBunker_15.png" id="31_1uinl"]
+[ext_resource type="Texture2D" uid="uid://bbb3gk84a3bqe" path="res://assets/panels/bunker_bad/BadBunker_16.png" id="32_ft2d5"]
+[ext_resource type="Texture2D" uid="uid://yj58raxojogo" path="res://assets/panels/bunker_bad/BadBunker_16_text1.png" id="33_oaig0"]
+[ext_resource type="Texture2D" uid="uid://duvqhb0nnpj6d" path="res://assets/panels/bunker_bad/BadBunker_16_text2.png" id="34_q70cv"]
+[ext_resource type="Texture2D" uid="uid://bvqh0ie1hncxw" path="res://assets/panels/bunker_bad/BadBunker_17.png" id="35_xsiyk"]
+[ext_resource type="Texture2D" uid="uid://ddao0elx6ch8v" path="res://assets/panels/bunker_bad/BadBunker_17_text1.png" id="36_kt04m"]
+[ext_resource type="Texture2D" uid="uid://bl7gqpun4mq87" path="res://assets/panels/bunker_bad/BadBunker_17_text2.png" id="37_ov41b"]
+[ext_resource type="Texture2D" uid="uid://dnhhkb8jkeu5" path="res://assets/panels/bunker_bad/BadBunker_B_9.png" id="38_yg1ih"]
+[ext_resource type="Texture2D" uid="uid://byhsvvu072sin" path="res://assets/panels/bunker_bad/BadBunker_G_9.png" id="39_k58xf"]
+[ext_resource type="Texture2D" uid="uid://blaj1ijwyv5gb" path="res://assets/panels/bunker_bad/BadBunker_G_9_text1.png" id="40_1oigs"]
+[ext_resource type="Texture2D" uid="uid://sqwkmib00u2i" path="res://assets/panels/bunker_bad/BadBunker_G_9_text2.png" id="41_fvgmh"]
+[ext_resource type="Texture2D" uid="uid://cfsiuloc5gp2r" path="res://assets/panels/bunker_bad/BadBunker_G_10.png" id="42_l3gjt"]
+[ext_resource type="Texture2D" uid="uid://dglm20c7etp68" path="res://assets/panels/bunker_bad/BadBunker_G_10_text1.png" id="43_os6ik"]
+[ext_resource type="Texture2D" uid="uid://dlpjkoqfxuy34" path="res://assets/panels/bunker_bad/BadBunker_G_10_text2.png" id="44_mgb0g"]
+[ext_resource type="Texture2D" uid="uid://ulvoyupw37s2" path="res://assets/panels/bunker_bad/BadBunker_G_11.png" id="45_4e084"]
+[ext_resource type="Texture2D" uid="uid://yw4x22sar0ig" path="res://assets/panels/bunker_bad/BadBunker_G_11_text1.png" id="46_aci7m"]
+[ext_resource type="Texture2D" uid="uid://urmykl0rdbp" path="res://assets/panels/bunker_bad/BadBunker_N_9.png" id="47_k6bwo"]
+[ext_resource type="Texture2D" uid="uid://3ggjw6p2gy1t" path="res://assets/panels/bunker_bad/BadBunker_N_9_text1.png" id="48_qfkt1"]
+[ext_resource type="Texture2D" uid="uid://q6i4mxnvwwsv" path="res://assets/panels/bunker_bad/BadBunker_N_9_text2.png" id="49_eqcbq"]
+[ext_resource type="Texture2D" uid="uid://c2pn6q6y7yxlc" path="res://assets/panels/bunker_bad/BadBunker_N_10.png" id="50_73t4r"]
+[ext_resource type="Texture2D" uid="uid://bvk211cswg31x" path="res://assets/panels/bunker_bad/BadBunker_N_10_text1.png" id="51_puc0c"]
+[ext_resource type="Texture2D" uid="uid://drwj3s1np7272" path="res://assets/panels/bunker_bad/BadBunker_N_10_text2.png" id="52_a12yi"]
+[ext_resource type="Texture2D" uid="uid://bk12ae5onyilt" path="res://assets/panels/bunker_bad/BadBunker_N_11.png" id="53_hqaas"]
+[ext_resource type="Texture2D" uid="uid://db3whrs450ni0" path="res://assets/panels/bunker_bad/BadBunker_N_11_text1.png" id="54_fqg5l"]
+
+[node name="Page5B" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fs5pb")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.619608, 0.67451, 0.737255, 1)
+
+[node name="BadBunkerStoryboard2G" type="Sprite2D" parent="."]
+texture = ExtResource("4_8feqq")
+centered = false
+
+[node name="BadBunkerStoryboard2N" type="Sprite2D" parent="."]
+texture = ExtResource("5_mxfs7")
+centered = false
+
+[node name="BadBunkerStoryboard3" type="Sprite2D" parent="."]
+texture = ExtResource("6_0qb3k")
+centered = false
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BadBunker1" type="Sprite2D" parent="Panels"]
+position = Vector2(460, 321)
+scale = Vector2(0.782227, 0.782227)
+texture = ExtResource("7_lj335")
+
+[node name="BadBunker2" type="Sprite2D" parent="Panels"]
+position = Vector2(238, 805)
+texture = ExtResource("8_tcamv")
+
+[node name="BadBunker3" type="Sprite2D" parent="Panels"]
+position = Vector2(647, 803)
+texture = ExtResource("9_rtyk5")
+
+[node name="BadBunker3Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(817, 627)
+texture = ExtResource("10_k7bnm")
+
+[node name="BadBunker4" type="Sprite2D" parent="Panels"]
+position = Vector2(1255, 272)
+texture = ExtResource("11_at3p1")
+
+[node name="BadBunker4Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(1066, 357)
+texture = ExtResource("12_sd8fu")
+
+[node name="BadBunker4Text2" type="Sprite2D" parent="Panels"]
+position = Vector2(1429, 133)
+texture = ExtResource("13_l5p4t")
+
+[node name="BadBunker5" type="Sprite2D" parent="Panels"]
+position = Vector2(1684, 308)
+texture = ExtResource("14_ra0ti")
+
+[node name="BadBunker7" type="Sprite2D" parent="Panels"]
+position = Vector2(1693, 822)
+texture = ExtResource("18_xifh8")
+
+[node name="BadBunker5Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(1544, 427)
+texture = ExtResource("15_kj4fq")
+
+[node name="BadBunker6" type="Sprite2D" parent="Panels"]
+position = Vector2(1221, 784)
+texture = ExtResource("16_ug7mh")
+
+[node name="BadBunker6Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(1374, 655)
+texture = ExtResource("17_ormyh")
+
+[node name="Background2" type="ColorRect" parent="Panels"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.619608, 0.67451, 0.737255, 1)
+
+[node name="BadBunkerStoryboard2B" type="Sprite2D" parent="Panels"]
+scale = Vector2(1.49481, 1.48214)
+texture = ExtResource("3_7gt2q")
+centered = false
+
+[node name="BadBunker8" type="Sprite2D" parent="Panels"]
+position = Vector2(489, 291)
+scale = Vector2(0.841309, 0.841309)
+texture = ExtResource("19_fbrdc")
+
+[node name="BadBunker8Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(321, 184)
+scale = Vector2(0.705078, 0.705078)
+texture = ExtResource("24_dp5hs")
+
+[node name="BadBunker8B10" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("20_jpb6g")
+
+[node name="BadBunker8Db" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("21_xl8s7")
+
+[node name="BadBunker8Dg" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("22_gebbn")
+
+[node name="BadBunker8Dn" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("23_g43g8")
+
+[node name="BadBunker12" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("25_bv3vm")
+
+[node name="BadBunker12Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("26_n532k")
+
+[node name="BadBunker13" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("27_b6yjq")
+
+[node name="BadBunker13Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("28_kvjq3")
+
+[node name="BadBunker14" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("29_5fub2")
+
+[node name="BadBunker14Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("30_otolo")
+
+[node name="BadBunker15" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("31_1uinl")
+
+[node name="BadBunker16" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("32_ft2d5")
+
+[node name="BadBunker16Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("33_oaig0")
+
+[node name="BadBunker16Text2" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("34_q70cv")
+
+[node name="BadBunker17" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("35_xsiyk")
+
+[node name="BadBunker17Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("36_kt04m")
+
+[node name="BadBunker17Text2" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("37_ov41b")
+
+[node name="BadBunkerB9" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("38_yg1ih")
+
+[node name="BadBunkerG9" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("39_k58xf")
+
+[node name="BadBunkerG9Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("40_1oigs")
+
+[node name="BadBunkerG9Text2" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("41_fvgmh")
+
+[node name="BadBunkerG10" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("42_l3gjt")
+
+[node name="BadBunkerG10Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("43_os6ik")
+
+[node name="BadBunkerG10Text2" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("44_mgb0g")
+
+[node name="BadBunkerG11" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("45_4e084")
+
+[node name="BadBunkerG11Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("46_aci7m")
+
+[node name="BadBunkerN9" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("47_k6bwo")
+
+[node name="BadBunkerN9Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("48_qfkt1")
+
+[node name="BadBunkerN9Text2" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("49_eqcbq")
+
+[node name="BadBunkerN10" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("50_73t4r")
+
+[node name="BadBunkerN10Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("51_puc0c")
+
+[node name="BadBunkerN10Text2" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("52_a12yi")
+
+[node name="BadBunkerN11" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("53_hqaas")
+
+[node name="BadBunkerN11Text1" type="Sprite2D" parent="Panels"]
+visible = false
+position = Vector2(215, 242)
+texture = ExtResource("54_fqg5l")

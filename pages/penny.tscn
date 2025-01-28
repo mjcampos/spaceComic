@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://diw0evlamylkb"]
+
+[ext_resource type="Texture2D" uid="uid://dmlp1lr4pf6jd" path="res://assets/portraits/Penny/PennyWhiteBackground.png" id="1_tq34e"]
+[ext_resource type="Texture2D" uid="uid://bn4wli678t4aq" path="res://assets/portraits/Penny/PennyBase.png" id="2_djkwv"]
+[ext_resource type="Texture2D" uid="uid://ud3g55156ufk" path="res://assets/portraits/Penny/PennyFrame.png" id="3_8ws7o"]
+[ext_resource type="Texture2D" uid="uid://b7m74n0ntyvf1" path="res://assets/portraits/Penny/PennyAngry.png" id="4_0xv80"]
+[ext_resource type="Texture2D" uid="uid://ddarqv8xof8q3" path="res://assets/portraits/Penny/PennyBigSmile.png" id="5_2fqra"]
+[ext_resource type="Texture2D" uid="uid://crmnxgj68drki" path="res://assets/portraits/Penny/PennySad.png" id="6_u4oor"]
+[ext_resource type="Texture2D" uid="uid://bs1jhmcaejej" path="res://assets/portraits/Penny/PennySmallSmile.png" id="7_f7p52"]
+
+[node name="Penny" type="CenterContainer"]
+
+[node name="PennyWhiteBackground" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_tq34e")
+
+[node name="PennyBase" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_djkwv")
+
+[node name="PennyFrame" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("3_8ws7o")
+
+[node name="PennyAngry" type="TextureRect" parent="."]
+visible = false
+layout_mode = 2
+texture = ExtResource("4_0xv80")
+
+[node name="PennyBigSmile" type="TextureRect" parent="."]
+visible = false
+layout_mode = 2
+texture = ExtResource("5_2fqra")
+
+[node name="PennySad" type="TextureRect" parent="."]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_u4oor")
+
+[node name="PennySmallSmile" type="TextureRect" parent="."]
+visible = false
+layout_mode = 2
+texture = ExtResource("7_f7p52")

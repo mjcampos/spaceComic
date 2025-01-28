@@ -1,0 +1,159 @@
+[gd_scene load_steps=21 format=3 uid="uid://btwoeqcqlhljs"]
+
+[ext_resource type="Script" path="res://pages/page_5g.gd" id="1_lalmk"]
+[ext_resource type="Texture2D" uid="uid://caixardbb583h" path="res://assets/panels/bunker_good/GoodBunker_1.png" id="6_i3t3e"]
+[ext_resource type="Texture2D" uid="uid://d3qwc66lt6fwo" path="res://assets/panels/bunker_good/GoodBunker_2.png" id="7_78gsu"]
+[ext_resource type="Texture2D" uid="uid://dcyenfw5nqsxd" path="res://assets/panels/bunker_good/GoodBunker_3.png" id="8_fc06j"]
+[ext_resource type="Texture2D" uid="uid://bgqriy2r4mnv5" path="res://assets/panels/bunker_good/GoodBunker_5.png" id="9_xktm5"]
+[ext_resource type="Texture2D" uid="uid://fbpvh4sh46b1" path="res://assets/panels/bunker_good/GoodBunker_4.png" id="10_6nl6n"]
+[ext_resource type="Texture2D" uid="uid://dfr3o6gdbe4tx" path="res://assets/panels/bunker_good/GoodBunker_6.png" id="11_s00u1"]
+[ext_resource type="Texture2D" uid="uid://cf8bbgoo21i8v" path="res://assets/panels/bunker_good/GoodBunker_7.png" id="12_2bkr6"]
+[ext_resource type="Texture2D" uid="uid://cqyx6lkxtdj8t" path="res://assets/panels/bunker_good/GoodBunker_8.png" id="13_7yfwf"]
+[ext_resource type="Texture2D" uid="uid://bq1ayqewtvgwt" path="res://assets/panels/bunker_good/GoodBunker_9.png" id="14_erxjm"]
+[ext_resource type="Texture2D" uid="uid://evrpiojnsf45" path="res://assets/panels/bunker_good/GoodBunker_10.png" id="15_00adw"]
+[ext_resource type="Texture2D" uid="uid://bvme03siyyfmj" path="res://assets/panels/bunker_good/GoodBunker_11.png" id="16_d2i1a"]
+[ext_resource type="Texture2D" uid="uid://qvi7sh86cbc7" path="res://assets/panels/bunker_good/GoodBunker_12.png" id="17_2sps6"]
+[ext_resource type="Texture2D" uid="uid://bdm53t30bpd4j" path="res://assets/panels/bunker_good/GoodBunker_13.png" id="18_qiurf"]
+[ext_resource type="Texture2D" uid="uid://ci2xeancwvikc" path="res://assets/panels/bunker_good/GoodBunker_14.png" id="19_ogv43"]
+[ext_resource type="Texture2D" uid="uid://yoqk7x53r4d" path="res://assets/panels/bunker_good/GoodBunker_15.png" id="20_ay6ia"]
+[ext_resource type="Texture2D" uid="uid://b2a4seu2akoxm" path="res://assets/panels/bunker_good/GoodBunker_15_text1.png" id="21_j7jqq"]
+[ext_resource type="Texture2D" uid="uid://6fbmmueronu0" path="res://assets/panels/bunker_good/GoodBunker_15_text2.png" id="22_4pifk"]
+[ext_resource type="Texture2D" uid="uid://bpq10qepbmp3f" path="res://assets/panels/bunker_good/GoodBunker_16.png" id="23_ew17q"]
+[ext_resource type="Texture2D" uid="uid://dyuaupy8iunp5" path="res://assets/panels/bunker_good/GoodBunker_17.png" id="24_rgetm"]
+
+[node name="Page5G" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_lalmk")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.619608, 0.67451, 0.737255, 1)
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GoodBunker1" type="Sprite2D" parent="Panels"]
+position = Vector2(513, 382)
+texture = ExtResource("6_i3t3e")
+
+[node name="GoodBunker2" type="Sprite2D" parent="Panels"]
+position = Vector2(230, 840)
+texture = ExtResource("7_78gsu")
+
+[node name="GoodBunker3" type="Sprite2D" parent="Panels"]
+position = Vector2(684, 844)
+texture = ExtResource("8_fc06j")
+
+[node name="GoodBunker5" type="Sprite2D" parent="Panels"]
+position = Vector2(1537, 290)
+texture = ExtResource("9_xktm5")
+
+[node name="GoodBunker4" type="Sprite2D" parent="Panels"]
+position = Vector2(1206, 290)
+texture = ExtResource("10_6nl6n")
+
+[node name="GoodBunker6" type="Sprite2D" parent="Panels"]
+position = Vector2(1407, 588)
+texture = ExtResource("11_s00u1")
+
+[node name="Background2" type="ColorRect" parent="Panels"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.619608, 0.67451, 0.737255, 1)
+
+[node name="GoodBunker7" type="Sprite2D" parent="Panels"]
+position = Vector2(461, 372)
+texture = ExtResource("12_2bkr6")
+
+[node name="GoodBunker8" type="Sprite2D" parent="Panels"]
+position = Vector2(543, 827)
+scale = Vector2(0.867188, 0.867188)
+texture = ExtResource("13_7yfwf")
+
+[node name="GoodBunker9" type="Sprite2D" parent="Panels"]
+position = Vector2(1213, 299)
+scale = Vector2(0.689453, 0.689453)
+texture = ExtResource("14_erxjm")
+
+[node name="GoodBunker10" type="Sprite2D" parent="Panels"]
+position = Vector2(1585, 279)
+scale = Vector2(0.725098, 0.725098)
+texture = ExtResource("15_00adw")
+
+[node name="GoodBunker11" type="Sprite2D" parent="Panels"]
+position = Vector2(1427, 834)
+scale = Vector2(0.960937, 0.960937)
+texture = ExtResource("16_d2i1a")
+
+[node name="Background3" type="ColorRect" parent="Panels"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.619608, 0.67451, 0.737255, 1)
+
+[node name="GoodBunker13" type="Sprite2D" parent="Panels"]
+position = Vector2(721, 307)
+texture = ExtResource("18_qiurf")
+
+[node name="GoodBunker12" type="Sprite2D" parent="Panels"]
+position = Vector2(319, 361)
+texture = ExtResource("17_2sps6")
+
+[node name="GoodBunker14" type="Sprite2D" parent="Panels"]
+position = Vector2(448, 823)
+texture = ExtResource("19_ogv43")
+
+[node name="GoodBunker15" type="Sprite2D" parent="Panels"]
+position = Vector2(1411, 536)
+texture = ExtResource("20_ay6ia")
+
+[node name="GoodBunker15Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(1133, 265)
+texture = ExtResource("21_j7jqq")
+
+[node name="GoodBunker15Text2" type="Sprite2D" parent="Panels"]
+position = Vector2(1749, 699)
+texture = ExtResource("22_4pifk")
+
+[node name="Background4" type="ColorRect" parent="Panels"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.619608, 0.67451, 0.737255, 1)
+
+[node name="GoodBunker16" type="Sprite2D" parent="Panels"]
+position = Vector2(415, 536)
+texture = ExtResource("23_ew17q")
+
+[node name="GoodBunker17" type="Sprite2D" parent="Panels"]
+position = Vector2(1375, 534)
+texture = ExtResource("24_rgetm")

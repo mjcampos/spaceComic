@@ -1,6 +1,5 @@
 extends Control
 
-
 @onready var page_list = $Pages.get_children()
 
 var page_index : int = 3
