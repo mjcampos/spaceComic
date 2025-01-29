@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dqna524hc6h6d" path="res://assets/panels/intro/p5.png" id="6_ktiuk"]
 [ext_resource type="Texture2D" uid="uid://oh8wk3v5wpvm" path="res://assets/panels/intro/p6.png" id="7_6o10h"]
 [ext_resource type="FontFile" uid="uid://rbe0v5gka6x6" path="res://assets/fonts/RX100/Fonts/OTF/RX100-Regular.otf" id="8_6r6gc"]
-[ext_resource type="PackedScene" uid="uid://cdatek6k50o3p" path="res://ui/thought_bubble.tscn" id="8_injsl"]
+[ext_resource type="PackedScene" path="res://ui/thought_bubble.tscn" id="8_injsl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2kew0"]
 content_margin_left = 10.0
