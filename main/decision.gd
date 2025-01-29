@@ -7,7 +7,7 @@ var is_current : bool = false : set = set_current
 var word_index : int = 0 : set = set_word
 var tone_index : int = 0 : set = set_tone
 
-signal decision_confirmed
+signal decision_confirmed(index)
 
 
 func set_current(val : bool):
@@ -51,7 +51,7 @@ func _process(delta):
 
 
 func confirm_decision():
-	decision_confirmed.emit()
+	decision_confirmed.emit(word_index)
 	is_current = false
 
 
@@ -65,9 +65,11 @@ func _on_btn_down_pressed():
 
 func _on_btn_left_pressed():
 	word_index -= 1
-	AudioManager.sfx_uitone_boop_left.play()
+	AudioManager.play_audio("ui_boop_left")
+	#AudioManager.sfx_uitone_boop_left.play()
 
 
 func _on_btn_right_pressed():
 	word_index += 1
-	AudioManager.sfx_uitone_boop_right.play()
+	AudioManager.play_audio("ui_boop_right")
+	#AudioManager.sfx_uitone_boop_right.play()

@@ -85,4 +85,3 @@ func _on_tween_finished():
 
 func _on_decision_confirmed():
 	paused = false
-

@@ -10,7 +10,7 @@ func _on_btn_new_pressed():
 	get_tree().change_scene_to_file("res://main/main_game.tscn")
 
 
-func _on_btn_continue_pressed():
+func _on_btn_credits_pressed() -> void:
 	pass # Replace with function body.
 
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://6hq7b1xlgyl7"]
 
 [ext_resource type="Script" path="res://main/main_game.gd" id="1_j21gb"]
-[ext_resource type="FontFile" uid="uid://br1u4dxauauu6" path="res://ui/fonts/Kenney Pixel.ttf" id="1_ril5v"]
+[ext_resource type="FontFile" uid="uid://pfpbhubd1b1p" path="res://assets/fonts/Rajdhani/Fonts/TTF/Rajdhani-Variable.ttf" id="2_0ofg7"]
 [ext_resource type="PackedScene" uid="uid://cw8de1i83h7br" path="res://pages/page_1.tscn" id="3_u35g2"]
 [ext_resource type="PackedScene" uid="uid://dstt6u8mqopaf" path="res://pages/page_2.tscn" id="4_lkdyi"]
 [ext_resource type="PackedScene" uid="uid://b2vbhpb05xjvu" path="res://pages/page_3.tscn" id="5_saawf"]
@@ -38,26 +38,26 @@ alignment = 1
 
 [node name="BtnEnter" type="Button" parent="UI/MenuBar"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_ril5v")
-theme_override_font_sizes/font_size = 64
+theme_override_fonts/font = ExtResource("2_0ofg7")
+theme_override_font_sizes/font_size = 48
 text = "Enter Choice"
 
 [node name="BtnRepeat" type="Button" parent="UI/MenuBar"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_ril5v")
-theme_override_font_sizes/font_size = 64
+theme_override_fonts/font = ExtResource("2_0ofg7")
+theme_override_font_sizes/font_size = 48
 text = "Repeat VO"
 
 [node name="BtnUndo" type="Button" parent="UI/MenuBar"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_ril5v")
-theme_override_font_sizes/font_size = 64
+theme_override_fonts/font = ExtResource("2_0ofg7")
+theme_override_font_sizes/font_size = 48
 text = "Undo Choice"
 
 [node name="BtnNext" type="Button" parent="UI/MenuBar"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_ril5v")
-theme_override_font_sizes/font_size = 64
+theme_override_fonts/font = ExtResource("2_0ofg7")
+theme_override_font_sizes/font_size = 48
 text = "Next"
 
 [node name="Pages" type="Control" parent="."]

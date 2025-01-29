@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://dstt6u8mqopaf"]
 
+[ext_resource type="Script" path="res://pages/page.gd" id="1_7cpj4"]
 [ext_resource type="Texture2D" uid="uid://bwfi1d2up7nkg" path="res://assets/panels/mil_meet/MilitaryMeet_1.png" id="1_h6w0x"]
-[ext_resource type="Script" path="res://pages/page_2.gd" id="1_li6ct"]
 [ext_resource type="Texture2D" uid="uid://f8ceqay2xu8n" path="res://assets/panels/mil_meet/MilitaryMeet_2.png" id="2_i6mb5"]
 [ext_resource type="Texture2D" uid="uid://b6sah7xp2pv3" path="res://assets/panels/mil_meet/MilitaryMeet_3.png" id="3_ie6un"]
 [ext_resource type="Texture2D" uid="uid://dpg1k0gs6va0y" path="res://assets/panels/mil_meet/MilitaryMeet_4.png" id="4_gnd0l"]
@@ -26,7 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_li6ct")
+script = ExtResource("1_7cpj4")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1

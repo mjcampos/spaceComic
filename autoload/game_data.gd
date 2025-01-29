@@ -1,0 +1,70 @@
+extends Node
+
+const PAGE_1 = [
+	[
+		"Panels/P1",
+		"Panels/T1",
+		"Panels/P2",
+		"Panels/T2",
+		"Panels/P3",
+		"Panels/T3",
+		"half",
+		"Panels/P4",
+		"Panels/T4",
+		"Panels/P5",
+		"Panels/T5",
+		"Panels/P6",
+		"Panels/T6",
+		"end",
+	]
+]
+const PAGE_2 = [
+	[
+		"Panels/T1",
+		"Panels/P1",
+		"Panels/T2",
+		"Panels/P2",
+		"Panels/P3",
+		"Panels/C1",
+		"half",
+		"Panels/P4",
+		"Panels/P5",
+		"Panels/T4",
+		"Panels/P6",
+		"Panels/T5",
+		"Panels/P8",
+		"Panels/T6",
+		"Panels/T7",
+		"Panels/PennyPortraitFrame",
+		"end",
+	]
+]
+const PAGE_3 = [
+	[
+		"MilitaryInstructor1",
+		"MilitaryInstructor2",
+		"MilitaryInstructor3",
+		"MilitaryInstructor3Text1",
+		"half",
+		"MilitaryInstructor4",
+		"MilitaryInstructor4Text1",
+		"MilitaryInstructor5",
+		"Decision",
+	],
+	[
+		"MilitaryInstructorB6",
+		"MilitaryInstructorB7",
+		"MilitaryInstructorB8",
+		"end",
+	],
+	[
+		"MilitaryInstructorG6",
+		"MilitaryInstructorG7",
+		"MilitaryInstructorG8",
+		"end",
+	],
+	[
+		"MilitaryInstructorN6",
+		"end",
+	],
+]

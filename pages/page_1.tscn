@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://cw8de1i83h7br"]
 
 [ext_resource type="Texture2D" uid="uid://dd4he354ypsuj" path="res://assets/panels/intro/p1.png" id="1_1m3jt"]
-[ext_resource type="Script" path="res://pages/page_1.gd" id="1_d6ht8"]
+[ext_resource type="Script" path="res://pages/page.gd" id="1_n3cg7"]
 [ext_resource type="Texture2D" uid="uid://dj5iwemkry02y" path="res://assets/panels/intro/p2.png" id="2_eb17b"]
 [ext_resource type="Texture2D" uid="uid://58vr2vo8c367" path="res://assets/panels/intro/p3.png" id="3_6n2hb"]
 [ext_resource type="Texture2D" uid="uid://bttlxpyny067v" path="res://assets/panels/intro/t1.png" id="3_7dg8l"]
@@ -21,7 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_d6ht8")
+script = ExtResource("1_n3cg7")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1

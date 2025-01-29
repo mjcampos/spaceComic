@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://0c3880po7k2m"]
+[gd_scene load_steps=4 format=3 uid="uid://0c3880po7k2m"]
 
 [ext_resource type="Script" path="res://menu/menu_title.gd" id="1_xjrde"]
-[ext_resource type="FontFile" uid="uid://br1u4dxauauu6" path="res://ui/fonts/Kenney Pixel.ttf" id="2_qpqt8"]
+[ext_resource type="Texture2D" uid="uid://btupm34b8aa16" path="res://menu/Placeholder_Title_Screen.png" id="2_8bqlv"]
+[ext_resource type="FontFile" uid="uid://bqykjtpgb8jl0" path="res://assets/fonts/Rajdhani/Fonts/OTF/Rajdhani-Bold.otf" id="3_6h05o"]
 
 [node name="MenuTitle" type="Control"]
 layout_mode = 3
@@ -12,64 +13,44 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xjrde")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 1)
+texture = ExtResource("2_8bqlv")
 
 [node name="Header" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.7
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -480.0
-offset_top = -176.0
-offset_right = 480.0
-offset_bottom = 176.0
+anchor_bottom = 0.7
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="Title" type="Label" parent="Header"]
-custom_minimum_size = Vector2(960, 0)
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_qpqt8")
-theme_override_font_sizes/font_size = 128
-text = "Not A Very Intimate Conversation"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="SubTitle" type="Label" parent="Header"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_qpqt8")
-theme_override_font_sizes/font_size = 64
-text = "They Were Roommates All Along!"
-horizontal_alignment = 1
-
 [node name="BtnNew" type="Button" parent="Header"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_qpqt8")
+theme_override_fonts/font = ExtResource("3_6h05o")
 theme_override_font_sizes/font_size = 48
 text = "New Story"
 
-[node name="BtnContinue" type="Button" parent="Header"]
+[node name="BtnCredits" type="Button" parent="Header"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_qpqt8")
+theme_override_fonts/font = ExtResource("3_6h05o")
 theme_override_font_sizes/font_size = 48
-text = "Continue Story"
+text = "Credits"
 
 [node name="BtnQuit" type="Button" parent="Header"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_qpqt8")
+theme_override_fonts/font = ExtResource("3_6h05o")
 theme_override_font_sizes/font_size = 48
 text = "Quit"
 
 [connection signal="pressed" from="Header/BtnNew" to="." method="_on_btn_new_pressed"]
-[connection signal="pressed" from="Header/BtnContinue" to="." method="_on_btn_continue_pressed"]
+[connection signal="pressed" from="Header/BtnCredits" to="." method="_on_btn_credits_pressed"]
 [connection signal="pressed" from="Header/BtnQuit" to="." method="_on_btn_quit_pressed"]
