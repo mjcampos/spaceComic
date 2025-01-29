@@ -1,8 +1,8 @@
 extends Control
 
 @onready var panel_queue = [
-	$Panels/P1,
 	$Panels/T1,
+	$Panels/P1,
 	$Panels/T2,
 	$Panels/P2,
 	$Panels/P3,
@@ -23,6 +23,27 @@ var page_finished : bool = false
 var paused : bool = false
 
 signal cam_pan_triggered
+
+@onready var audio_queue = [
+	"null",
+	AudioManager.hard_sfx_bed_cloth_rustle_2,
+	"null",
+	"null",
+	"null",
+	AudioManager.vo_penelope_opening_idiot,
+	"half",
+	"null",
+	"null",
+	AudioManager.vo_trista_gasp_penny_1,
+	"null",
+	AudioManager.vo_penelope_sigh_3,
+	"null",
+	AudioManager.vo_trista_efforts_umm_1,
+	AudioManager.vo_trista_efforts_umm_2,
+	"null",
+]
+
+var audio_finished : bool = false
 
 
 func _ready() -> void:

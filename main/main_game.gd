@@ -2,7 +2,7 @@ extends Control
 
 @onready var page_list = $Pages.get_children()
 
-var page_index : int = 2
+var page_index : int = 1
 var p3_choice : int = 0
 var p4_choice : int = 0
 
@@ -35,6 +35,13 @@ func next_page():
 		page_index += 1
 
 
+func play_panel_audio(audio):
+	if !audio is String:
+		audio.play()
+	else:
+		pass
+
+
 func _on_btn_enter_pressed():
 	pass
 
@@ -50,5 +57,6 @@ func _on_btn_undo_pressed():
 func _on_btn_next_pressed():
 	if !page_list[page_index].page_finished:
 		page_list[page_index].next_panel()
+		play_panel_audio(page_list[page_index].audio_queue[page_list[page_index].panel_index])
 	else:
 		next_page()

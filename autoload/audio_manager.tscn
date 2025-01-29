@@ -1,4 +1,4 @@
-[gd_scene load_steps=130 format=3 uid="uid://du1qymmg85vp6"]
+[gd_scene load_steps=137 format=3 uid="uid://du1qymmg85vp6"]
 
 [ext_resource type="Script" path="res://autoload/audio_manager.gd" id="1_2qak2"]
 [ext_resource type="AudioStream" uid="uid://mdrp02slsxb3" path="res://Audio/SFX/NAVIC_SFX_UITone_Excited3.wav" id="2_cqwdl"]
@@ -10,16 +10,23 @@
 [ext_resource type="AudioStream" uid="uid://uh6b0jkpbu0h" path="res://Audio/SFX/NAVIC_SFX_UI_BoopRight.wav" id="8_6lric"]
 [ext_resource type="AudioStream" uid="uid://dy6lg43xnipd3" path="res://Audio/SFX/NAVIC_SFX_Chime_Penelope.wav" id="9_xlaol"]
 [ext_resource type="AudioStream" uid="uid://b25xucwsswhnc" path="res://Audio/SFX/NAVIC_SFX_Chime_Trista.wav" id="10_r82ln"]
+[ext_resource type="AudioStream" uid="uid://dbhbr3h5eiska" path="res://Audio/SFX/HardSFX_BedClothRustle_1.wav" id="11_4gt65"]
 [ext_resource type="AudioStream" uid="uid://406nfid0xaex" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HMM_1.wav" id="11_12cbs"]
 [ext_resource type="AudioStream" uid="uid://bg3at65o5h5ta" path="res://Audio/Music/NAVIC_Music_AmbientTheme_1.mp3" id="11_b7ii2"]
+[ext_resource type="AudioStream" uid="uid://b8vbpsucfc05j" path="res://Audio/SFX/HardSFX_BedClothRustle_2.wav" id="12_712qq"]
 [ext_resource type="AudioStream" uid="uid://e5o08yp0mup8" path="res://Audio/Music/NAVIC_Music_AmbientTheme_2.mp3" id="12_atvfp"]
 [ext_resource type="AudioStream" uid="uid://bwv5unelnx0ye" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HuhHM_1.wav" id="12_tuy5i"]
+[ext_resource type="AudioStream" uid="uid://b0m8pinho4ggt" path="res://Audio/SFX/HardSFX_CafeteriaShortAmbience.wav" id="13_cii7x"]
 [ext_resource type="AudioStream" uid="uid://bticm6w3urjdn" path="res://Audio/Music/NAVIC_Music_AmbientTheme_3.mp3" id="13_tx21p"]
 [ext_resource type="AudioStream" uid="uid://c1no0tbiy5j23" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HuhHM_2.wav" id="13_ygaol"]
 [ext_resource type="AudioStream" uid="uid://x4cf536mvyxm" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HuhHM_3.wav" id="14_2x30j"]
 [ext_resource type="AudioStream" uid="uid://b4iqpsj713b0r" path="res://Audio/Music/NAVIC_Music_AmbientTheme_4.mp3" id="14_bsqet"]
+[ext_resource type="AudioStream" uid="uid://ksoyfko4qecf" path="res://Audio/SFX/HardSFX_FootStepSequenceConcrete.wav" id="14_ylk1b"]
+[ext_resource type="AudioStream" uid="uid://bmnl1o2f21yc4" path="res://Audio/SFX/HardSFX_FootStepSequenceMetal.wav" id="15_4pd52"]
 [ext_resource type="AudioStream" uid="uid://dwrm55apg33yh" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_HuhHM_4.wav" id="15_kshc6"]
 [ext_resource type="AudioStream" uid="uid://dtmdevyxj1ft5" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_NANIWHAT_1.wav" id="16_87yhy"]
+[ext_resource type="AudioStream" uid="uid://dajvg6y3ynnw7" path="res://Audio/SFX/HardSFX_HiTechMetalDoor.wav" id="16_rgajk"]
+[ext_resource type="AudioStream" uid="uid://bqlxmwy54qm3o" path="res://Audio/SFX/HardSFX_WoodDoor.wav" id="17_765ud"]
 [ext_resource type="AudioStream" uid="uid://cxefqr2w1shxn" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_NANIWHAT_3.wav" id="17_te61b"]
 [ext_resource type="AudioStream" uid="uid://de5n86ytbxtad" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_NANIWHAT_2.wav" id="18_n5tnd"]
 [ext_resource type="AudioStream" uid="uid://s3buxrrmmk22" path="res://Audio/VO/Penelope/VO_PenelopeEfforts_OhQuestionMark_1.wav" id="19_ijber"]
@@ -167,6 +174,34 @@ bus = &"SFX"
 
 [node name="SFX_UITONE_Chime_Trista" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_r82ln")
+bus = &"SFX"
+
+[node name="HardSfxBedClothRustle1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_4gt65")
+bus = &"SFX"
+
+[node name="HardSfxBedClothRustle2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_712qq")
+bus = &"SFX"
+
+[node name="HardSfxCafeteriaShortAmbience" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_cii7x")
+bus = &"SFX"
+
+[node name="HardSfxFootStepSequenceConcrete" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_ylk1b")
+bus = &"SFX"
+
+[node name="HardSfxFootStepSequenceMetal" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_4pd52")
+bus = &"SFX"
+
+[node name="HardSfxHiTechMetalDoor" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_rgajk")
+bus = &"SFX"
+
+[node name="HardSfxWoodDoor" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_765ud")
 bus = &"SFX"
 
 [node name="VO_PENELOPE_Serious_Hmm" type="AudioStreamPlayer" parent="."]
