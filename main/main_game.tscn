@@ -1,10 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://6hq7b1xlgyl7"]
+[gd_scene load_steps=13 format=3 uid="uid://6hq7b1xlgyl7"]
 
 [ext_resource type="Script" path="res://main/main_game.gd" id="1_j21gb"]
 [ext_resource type="FontFile" uid="uid://br1u4dxauauu6" path="res://ui/fonts/Kenney Pixel.ttf" id="1_ril5v"]
 [ext_resource type="PackedScene" uid="uid://cw8de1i83h7br" path="res://pages/page_1.tscn" id="3_u35g2"]
 [ext_resource type="PackedScene" uid="uid://dstt6u8mqopaf" path="res://pages/page_2.tscn" id="4_lkdyi"]
 [ext_resource type="PackedScene" uid="uid://b2vbhpb05xjvu" path="res://pages/page_3.tscn" id="5_saawf"]
+[ext_resource type="PackedScene" uid="uid://ct3a5lnxtna7h" path="res://pages/page_4b.tscn" id="6_k466t"]
+[ext_resource type="PackedScene" uid="uid://73ngm1ow3ynj" path="res://pages/page_4g.tscn" id="7_q23gd"]
+[ext_resource type="PackedScene" uid="uid://xqts4upfea1e" path="res://pages/page_4n.tscn" id="8_pmk08"]
+[ext_resource type="PackedScene" uid="uid://cyebkoxl2axg6" path="res://pages/page_5b.tscn" id="9_r4wyd"]
+[ext_resource type="PackedScene" uid="uid://btwoeqcqlhljs" path="res://pages/page_5g.tscn" id="10_874i6"]
+[ext_resource type="PackedScene" uid="uid://2ivfvfy7wnba" path="res://pages/page_5n.tscn" id="11_bgsl0"]
+[ext_resource type="PackedScene" uid="uid://d1j53k6p7wqf5" path="res://pages/ending.tscn" id="12_f02wo"]
 
 [node name="MainGame" type="Control"]
 layout_mode = 3
@@ -68,6 +75,24 @@ layout_mode = 1
 layout_mode = 1
 
 [node name="Page3" parent="Pages" instance=ExtResource("5_saawf")]
+layout_mode = 1
+
+[node name="Page4B" parent="Pages" instance=ExtResource("6_k466t")]
+layout_mode = 1
+
+[node name="Page4G" parent="Pages" instance=ExtResource("7_q23gd")]
+layout_mode = 1
+
+[node name="Page4N" parent="Pages" instance=ExtResource("8_pmk08")]
+layout_mode = 1
+
+[node name="Page5B" parent="Pages" instance=ExtResource("9_r4wyd")]
+
+[node name="Page5G" parent="Pages" instance=ExtResource("10_874i6")]
+
+[node name="Page5N" parent="Pages" instance=ExtResource("11_bgsl0")]
+
+[node name="Ending" parent="Pages" instance=ExtResource("12_f02wo")]
 layout_mode = 1
 
 [connection signal="pressed" from="UI/MenuBar/BtnEnter" to="." method="_on_btn_enter_pressed"]

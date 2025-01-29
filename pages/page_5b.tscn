@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://cyebkoxl2axg6"]
+[gd_scene load_steps=57 format=3 uid="uid://cyebkoxl2axg6"]
 
 [ext_resource type="Script" path="res://pages/page_5b.gd" id="1_fs5pb"]
 [ext_resource type="Texture2D" uid="uid://cyseb35v0584o" path="res://assets/panels/bunker_bad/Storyboards/Bad Bunker Storyboard 2_B.png" id="3_7gt2q"]
@@ -19,8 +19,11 @@
 [ext_resource type="Texture2D" uid="uid://i15x8t6307qm" path="res://assets/panels/bunker_bad/BadBunker_7.png" id="18_xifh8"]
 [ext_resource type="Texture2D" uid="uid://ckvj20ifytsdb" path="res://assets/panels/bunker_bad/BadBunker_8.png" id="19_fbrdc"]
 [ext_resource type="Texture2D" uid="uid://cgd7mjkba4xcj" path="res://assets/panels/bunker_bad/BadBunker_8_B_10.png" id="20_jpb6g"]
+[ext_resource type="PackedScene" uid="uid://dexcjud8rqlu8" path="res://main/decision.tscn" id="20_okcpb"]
+[ext_resource type="Texture2D" uid="uid://bj3rcq12k6tgp" path="res://ui/textures/normal_bub.png" id="21_bkbru"]
 [ext_resource type="Texture2D" uid="uid://cfe2t5caq7a65" path="res://assets/panels/bunker_bad/BadBunker_8_DB.png" id="21_xl8s7"]
 [ext_resource type="Texture2D" uid="uid://bbyq6b5u8jm83" path="res://assets/panels/bunker_bad/BadBunker_8_DG.png" id="22_gebbn"]
+[ext_resource type="Texture2D" uid="uid://bcxvqgnuck6c0" path="res://ui/textures/yell_bub.png" id="22_hneyn"]
 [ext_resource type="Texture2D" uid="uid://djwgoajehf4y3" path="res://assets/panels/bunker_bad/BadBunker_8_DN.png" id="23_g43g8"]
 [ext_resource type="Texture2D" uid="uid://d2nbmuas3k08h" path="res://assets/panels/bunker_bad/BadBunker_8_text1.png" id="24_dp5hs"]
 [ext_resource type="Texture2D" uid="uid://wa6jffgfdcmp" path="res://assets/panels/bunker_bad/BadBunker_12.png" id="25_bv3vm"]
@@ -69,18 +72,6 @@ offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.619608, 0.67451, 0.737255, 1)
-
-[node name="BadBunkerStoryboard2G" type="Sprite2D" parent="."]
-texture = ExtResource("4_8feqq")
-centered = false
-
-[node name="BadBunkerStoryboard2N" type="Sprite2D" parent="."]
-texture = ExtResource("5_mxfs7")
-centered = false
-
-[node name="BadBunkerStoryboard3" type="Sprite2D" parent="."]
-texture = ExtResource("6_0qb3k")
-centered = false
 
 [node name="Panels" type="Control" parent="."]
 layout_mode = 1
@@ -150,11 +141,6 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.619608, 0.67451, 0.737255, 1)
 
-[node name="BadBunkerStoryboard2B" type="Sprite2D" parent="Panels"]
-scale = Vector2(1.49481, 1.48214)
-texture = ExtResource("3_7gt2q")
-centered = false
-
 [node name="BadBunker8" type="Sprite2D" parent="Panels"]
 position = Vector2(489, 291)
 scale = Vector2(0.841309, 0.841309)
@@ -165,172 +151,181 @@ position = Vector2(321, 184)
 scale = Vector2(0.705078, 0.705078)
 texture = ExtResource("24_dp5hs")
 
-[node name="BadBunker8B10" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("20_jpb6g")
+[node name="Decision" parent="Panels" instance=ExtResource("20_okcpb")]
+offset_left = 774.0
+offset_top = 210.0
+offset_right = 774.0
+offset_bottom = 210.0
+word_list = Array[String](["Why?", "Penny... I don't want us to go out and fight.", "Alright. If that's what you're going to do..."])
+tone_list = Array[Texture]([ExtResource("21_bkbru"), ExtResource("22_hneyn")])
 
-[node name="BadBunker8Db" type="Sprite2D" parent="Panels"]
+[node name="BadBunker8Db" type="Sprite2D" parent="Panels/Decision"]
 visible = false
-position = Vector2(215, 242)
 texture = ExtResource("21_xl8s7")
 
-[node name="BadBunker8Dg" type="Sprite2D" parent="Panels"]
+[node name="BadBunker8Dg" type="Sprite2D" parent="Panels/Decision"]
 visible = false
-position = Vector2(215, 242)
 texture = ExtResource("22_gebbn")
 
-[node name="BadBunker8Dn" type="Sprite2D" parent="Panels"]
+[node name="BadBunker8Dn" type="Sprite2D" parent="Panels/Decision"]
 visible = false
-position = Vector2(215, 242)
 texture = ExtResource("23_g43g8")
 
-[node name="BadBunker12" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("25_bv3vm")
-
-[node name="BadBunker12Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("26_n532k")
-
-[node name="BadBunker13" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("27_b6yjq")
-
-[node name="BadBunker13Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("28_kvjq3")
-
-[node name="BadBunker14" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("29_5fub2")
-
-[node name="BadBunker14Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("30_otolo")
-
-[node name="BadBunker15" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("31_1uinl")
-
-[node name="BadBunker16" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("32_ft2d5")
-
-[node name="BadBunker16Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("33_oaig0")
-
-[node name="BadBunker16Text2" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("34_q70cv")
-
-[node name="BadBunker17" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("35_xsiyk")
-
-[node name="BadBunker17Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("36_kt04m")
-
-[node name="BadBunker17Text2" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
-texture = ExtResource("37_ov41b")
+[node name="BadBunkerStoryboard2B" type="Sprite2D" parent="Panels"]
+scale = Vector2(1.49481, 1.48214)
+texture = ExtResource("3_7gt2q")
+centered = false
 
 [node name="BadBunkerB9" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(482, 731)
+scale = Vector2(0.823242, 0.823242)
 texture = ExtResource("38_yg1ih")
 
+[node name="BadBunker8B10" type="Sprite2D" parent="Panels"]
+position = Vector2(1461, 552)
+scale = Vector2(1.02539, 1.02539)
+texture = ExtResource("20_jpb6g")
+
+[node name="BadBunkerStoryboard2G" type="Sprite2D" parent="Panels"]
+scale = Vector2(1.875, 1.84471)
+texture = ExtResource("4_8feqq")
+centered = false
+
 [node name="BadBunkerG9" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(487, 748)
 texture = ExtResource("39_k58xf")
 
 [node name="BadBunkerG9Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(275, 612)
 texture = ExtResource("40_1oigs")
 
 [node name="BadBunkerG9Text2" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(823, 880)
 texture = ExtResource("41_fvgmh")
 
 [node name="BadBunkerG10" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1166, 246)
 texture = ExtResource("42_l3gjt")
 
 [node name="BadBunkerG10Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1049, 212)
 texture = ExtResource("43_os6ik")
 
 [node name="BadBunkerG10Text2" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1333, 129)
 texture = ExtResource("44_mgb0g")
 
 [node name="BadBunkerG11" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1540, 574)
 texture = ExtResource("45_4e084")
 
 [node name="BadBunkerG11Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1219, 657)
 texture = ExtResource("46_aci7m")
 
+[node name="BadBunkerStoryboard2N" type="Sprite2D" parent="Panels"]
+scale = Vector2(1.65946, 1.48615)
+texture = ExtResource("5_mxfs7")
+centered = false
+
 [node name="BadBunkerN9" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(476, 767)
 texture = ExtResource("47_k6bwo")
 
 [node name="BadBunkerN9Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(162, 540)
 texture = ExtResource("48_qfkt1")
 
 [node name="BadBunkerN9Text2" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(766, 873)
 texture = ExtResource("49_eqcbq")
 
 [node name="BadBunkerN10" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1155, 253)
 texture = ExtResource("50_73t4r")
 
 [node name="BadBunkerN10Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1000, 148)
 texture = ExtResource("51_puc0c")
 
 [node name="BadBunkerN10Text2" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1329, 385)
 texture = ExtResource("52_a12yi")
 
 [node name="BadBunkerN11" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1578, 552)
 texture = ExtResource("53_hqaas")
 
 [node name="BadBunkerN11Text1" type="Sprite2D" parent="Panels"]
-visible = false
-position = Vector2(215, 242)
+position = Vector2(1374, 782)
 texture = ExtResource("54_fqg5l")
+
+[node name="Background3" type="ColorRect" parent="Panels"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.619608, 0.67451, 0.737255, 1)
+
+[node name="BadBunkerStoryboard3" type="Sprite2D" parent="Panels"]
+scale = Vector2(1.68667, 1.69085)
+texture = ExtResource("6_0qb3k")
+centered = false
+
+[node name="BadBunker12" type="Sprite2D" parent="Panels"]
+position = Vector2(245, 268)
+texture = ExtResource("25_bv3vm")
+
+[node name="BadBunker12Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(264, 125)
+texture = ExtResource("26_n532k")
+
+[node name="BadBunker13" type="Sprite2D" parent="Panels"]
+position = Vector2(672, 276)
+texture = ExtResource("27_b6yjq")
+
+[node name="BadBunker13Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(528, 155)
+texture = ExtResource("28_kvjq3")
+
+[node name="BadBunker14" type="Sprite2D" parent="Panels"]
+position = Vector2(460, 751)
+scale = Vector2(0.800781, 0.800781)
+texture = ExtResource("29_5fub2")
+
+[node name="BadBunker14Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(219, 714)
+texture = ExtResource("30_otolo")
+
+[node name="BadBunker15" type="Sprite2D" parent="Panels"]
+position = Vector2(1419, 254)
+scale = Vector2(0.823242, 0.823242)
+texture = ExtResource("31_1uinl")
+
+[node name="BadBunker16" type="Sprite2D" parent="Panels"]
+position = Vector2(1132, 744)
+texture = ExtResource("32_ft2d5")
+
+[node name="BadBunker16Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(1015, 574)
+texture = ExtResource("33_oaig0")
+
+[node name="BadBunker17" type="Sprite2D" parent="Panels"]
+position = Vector2(1578, 748)
+texture = ExtResource("35_xsiyk")
+
+[node name="BadBunker16Text2" type="Sprite2D" parent="Panels"]
+position = Vector2(1310, 854)
+texture = ExtResource("34_q70cv")
+
+[node name="BadBunker17Text1" type="Sprite2D" parent="Panels"]
+position = Vector2(1423, 612)
+texture = ExtResource("36_kt04m")
+
+[node name="BadBunker17Text2" type="Sprite2D" parent="Panels"]
+position = Vector2(1812, 665)
+texture = ExtResource("37_ov41b")

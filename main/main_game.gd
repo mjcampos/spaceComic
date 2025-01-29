@@ -2,7 +2,9 @@ extends Control
 
 @onready var page_list = $Pages.get_children()
 
-var page_index : int = 3
+var page_index : int = 2
+var p3_choice : int = 0
+var p4_choice : int = 0
 
 
 func _ready() -> void:

@@ -36,6 +36,7 @@ func next_panel():
 		panel_index += 1
 	else:
 		print("Showing panel: %s" % panel_queue[panel_index].name)
+		paused = true
 		panel_tween = create_tween()
 		panel_tween.tween_property(panel_queue[panel_index], "modulate", Color(1,1,1,1), 0.5)
 		panel_tween.tween_callback(_on_tween_finished)
@@ -43,6 +44,7 @@ func next_panel():
 
 
 func _on_tween_finished():
+	paused = false
 	panel_index += 1
 	if panel_index >= panel_queue.size():
 		page_finished = true

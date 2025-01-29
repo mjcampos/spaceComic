@@ -53,12 +53,14 @@ func next_panel():
 			cam_pan_triggered.emit(panel_queue[panel_index])
 			panel_index += 1
 		else:
+			paused = true
 			print("Showing panel: %s" % panel_queue[panel_index].name)
 			var panel_tween = create_tween()
 			panel_tween.tween_property(panel_queue[panel_index], "modulate", Color(1,1,1,1), 0.5)
 			panel_tween.tween_callback(_on_tween_finished)
 			panel_tween.play()
 	else:
+		paused = true
 		var this_panel = paths[$Decision.word_index][path_index]
 		print("Showing panel: %s" % this_panel.name)
 		var panel_tween = create_tween()
@@ -68,6 +70,7 @@ func next_panel():
 
 
 func _on_tween_finished():
+	paused = false
 	if panel_index < panel_queue.size():
 		if panel_queue[panel_index] is Control:
 			panel_queue[panel_index].is_current = true
