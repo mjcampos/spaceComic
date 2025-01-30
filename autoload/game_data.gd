@@ -212,5 +212,24 @@ const ENDING = [
 
 ]
 
+const AUDIO_2 = [
+	"null",
+	"sfx_cloth_rustle1",
+	"null",
+	"null",
+	"null",
+	"vo_penny_intro_idiot",
+	"half",
+	"null",
+	"null",
+	"vo_tris_gasppenny1",
+	"null",
+	"vo_penny_sigh3",
+	"null",
+	"vo_tris_umm1",
+	"vo_tris_umm2",
+	"null",
+]
+
 func get_page_data():
 	return [PAGE_1, PAGE_2, PAGE_3, PAGE_4B, PAGE_4G, PAGE_4N, PAGE_5B, PAGE_5G, PAGE_5N, ENDING]
