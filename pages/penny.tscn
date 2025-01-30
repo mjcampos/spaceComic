@@ -8,36 +8,26 @@
 [ext_resource type="Texture2D" uid="uid://crmnxgj68drki" path="res://assets/portraits/Penny/PennySad.png" id="6_u4oor"]
 [ext_resource type="Texture2D" uid="uid://bs1jhmcaejej" path="res://assets/portraits/Penny/PennySmallSmile.png" id="7_f7p52"]
 
-[node name="Penny" type="CenterContainer"]
-
-[node name="PennyWhiteBackground" type="TextureRect" parent="."]
-layout_mode = 2
+[node name="Penny" type="Sprite2D"]
 texture = ExtResource("1_tq34e")
 
-[node name="PennyBase" type="TextureRect" parent="."]
-layout_mode = 2
-texture = ExtResource("2_djkwv")
-
-[node name="PennyFrame" type="TextureRect" parent="."]
-layout_mode = 2
+[node name="PennyFrame" type="Sprite2D" parent="."]
 texture = ExtResource("3_8ws7o")
 
-[node name="PennyAngry" type="TextureRect" parent="."]
+[node name="PennyBase" type="Sprite2D" parent="."]
+texture = ExtResource("2_djkwv")
+
+[node name="PennyAngry" type="Sprite2D" parent="."]
 visible = false
-layout_mode = 2
 texture = ExtResource("4_0xv80")
 
-[node name="PennyBigSmile" type="TextureRect" parent="."]
+[node name="PennyBigSmile" type="Sprite2D" parent="."]
 visible = false
-layout_mode = 2
 texture = ExtResource("5_2fqra")
 
-[node name="PennySad" type="TextureRect" parent="."]
+[node name="PennySad" type="Sprite2D" parent="."]
 visible = false
-layout_mode = 2
 texture = ExtResource("6_u4oor")
 
-[node name="PennySmallSmile" type="TextureRect" parent="."]
-visible = false
-layout_mode = 2
+[node name="PennySmallSmile" type="Sprite2D" parent="."]
 texture = ExtResource("7_f7p52")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1j53k6p7wqf5"]
 
 [ext_resource type="Texture2D" uid="uid://b8s2jahygox1p" path="res://assets/panels/ending/Ending Background.png" id="1_3ryyf"]
-[ext_resource type="Script" path="res://pages/ending.gd" id="1_d5lbl"]
+[ext_resource type="Script" path="res://pages/page.gd" id="1_jwimi"]
 [ext_resource type="Texture2D" uid="uid://kfhepbyckjt1" path="res://assets/panels/ending/Bad Ending Isolated.png" id="2_nvjec"]
 [ext_resource type="Texture2D" uid="uid://cqedr6rdhx6iw" path="res://assets/panels/ending/Good Ending Isolated.png" id="3_5ofbr"]
 [ext_resource type="Texture2D" uid="uid://1povnmiop4ei" path="res://assets/panels/ending/Neutral Ending Isolated.png" id="4_6bkw3"]
@@ -13,7 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_d5lbl")
+script = ExtResource("1_jwimi")
 
 [node name="EndingBackground" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)

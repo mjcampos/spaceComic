@@ -14,10 +14,11 @@ func init_page():
 	for path in page_elements:
 		for element in path:
 			if !(element in KEYWORDS):
-				var this_element = get_node(element)
-				this_element.modulate = Color(1, 1, 1, 0)
-				if this_element is Control:
-					this_element.decision_confirmed.connect(_on_decision_confirmed)
+				var this_node = get_node(element)
+				this_node.modulate = Color(1, 1, 1, 0)
+				if this_node.has_signal("decision_confirmed"):
+					print("Linking decision node")
+					this_node.decision_confirmed.connect(_on_decision_confirmed)
 
 
 func next_panel():
@@ -43,6 +44,10 @@ func next_panel():
 
 func _on_tween_finished():
 	paused = false
+	var this_node = get_node(page_elements[panel_index.x][panel_index.y])
+	if this_node.has_signal("decision_confirmed"):
+		this_node.is_current = true
+		paused = true
 	panel_index.y += 1
 
 
@@ -50,3 +55,4 @@ func _on_decision_confirmed(index):
 	paused = false
 	panel_index.x = index + 1
 	panel_index.y = 0
+	next_panel()

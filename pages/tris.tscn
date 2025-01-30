@@ -8,38 +8,26 @@
 [ext_resource type="Texture2D" uid="uid://dh7vqj4sevava" path="res://assets/portraits/Tris/TrisHappy.png" id="6_4klxq"]
 [ext_resource type="Texture2D" uid="uid://dn602hhoski0f" path="res://assets/portraits/Tris/TrisSad.png" id="7_54eiv"]
 
-[node name="Tris" type="CenterContainer"]
-offset_right = 512.0
-offset_bottom = 512.0
-
-[node name="TrisWhiteBackground" type="TextureRect" parent="."]
-layout_mode = 2
+[node name="Tris" type="Sprite2D"]
 texture = ExtResource("1_t4d48")
 
-[node name="TrisBase" type="TextureRect" parent="."]
-layout_mode = 2
-texture = ExtResource("2_l5qi4")
-
-[node name="TrisFrame" type="TextureRect" parent="."]
-layout_mode = 2
+[node name="TrisFrame" type="Sprite2D" parent="."]
 texture = ExtResource("3_s6o8e")
 
-[node name="TrisAngry" type="TextureRect" parent="."]
+[node name="TrisBase" type="Sprite2D" parent="."]
+texture = ExtResource("2_l5qi4")
+
+[node name="TrisAngry" type="Sprite2D" parent="."]
 visible = false
-layout_mode = 2
 texture = ExtResource("4_pi43k")
 
-[node name="TrisElated" type="TextureRect" parent="."]
+[node name="TrisElated" type="Sprite2D" parent="."]
 visible = false
-layout_mode = 2
 texture = ExtResource("5_xb6vh")
 
-[node name="TrisHappy" type="TextureRect" parent="."]
-visible = false
-layout_mode = 2
+[node name="TrisHappy" type="Sprite2D" parent="."]
 texture = ExtResource("6_4klxq")
 
-[node name="TrisSad" type="TextureRect" parent="."]
+[node name="TrisSad" type="Sprite2D" parent="."]
 visible = false
-layout_mode = 2
 texture = ExtResource("7_54eiv")

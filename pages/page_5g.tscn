@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://btwoeqcqlhljs"]
 
-[ext_resource type="Script" path="res://pages/page_5g.gd" id="1_lalmk"]
+[ext_resource type="Script" path="res://pages/page.gd" id="1_oselp"]
 [ext_resource type="Texture2D" uid="uid://caixardbb583h" path="res://assets/panels/bunker_good/GoodBunker_1.png" id="6_i3t3e"]
 [ext_resource type="Texture2D" uid="uid://d3qwc66lt6fwo" path="res://assets/panels/bunker_good/GoodBunker_2.png" id="7_78gsu"]
 [ext_resource type="Texture2D" uid="uid://dcyenfw5nqsxd" path="res://assets/panels/bunker_good/GoodBunker_3.png" id="8_fc06j"]
@@ -24,7 +24,7 @@
 [node name="Page5G" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_lalmk")
+script = ExtResource("1_oselp")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1

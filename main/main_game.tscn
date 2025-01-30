@@ -38,27 +38,61 @@ alignment = 1
 
 [node name="BtnEnter" type="Button" parent="UI/MenuBar"]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_0ofg7")
 theme_override_font_sizes/font_size = 48
 text = "Enter Choice"
 
 [node name="BtnRepeat" type="Button" parent="UI/MenuBar"]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_0ofg7")
 theme_override_font_sizes/font_size = 48
 text = "Repeat VO"
 
 [node name="BtnUndo" type="Button" parent="UI/MenuBar"]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_0ofg7")
 theme_override_font_sizes/font_size = 48
 text = "Undo Choice"
 
 [node name="BtnNext" type="Button" parent="UI/MenuBar"]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_0ofg7")
 theme_override_font_sizes/font_size = 48
 text = "Next"
+
+[node name="PauseDialog" type="PanelContainer" parent="UI"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -46.5
+offset_right = 50.0
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Content" type="VBoxContainer" parent="UI/PauseDialog"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/PauseDialog/Content"]
+layout_mode = 2
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="BtnResume" type="Button" parent="UI/PauseDialog/Content"]
+layout_mode = 2
+text = "Resume"
+
+[node name="BtnQuit" type="Button" parent="UI/PauseDialog/Content"]
+layout_mode = 2
+text = "Quit to Title"
 
 [node name="Pages" type="Control" parent="."]
 layout_mode = 1
@@ -99,3 +133,5 @@ layout_mode = 1
 [connection signal="pressed" from="UI/MenuBar/BtnRepeat" to="." method="_on_btn_repeat_pressed"]
 [connection signal="pressed" from="UI/MenuBar/BtnUndo" to="." method="_on_btn_undo_pressed"]
 [connection signal="pressed" from="UI/MenuBar/BtnNext" to="." method="_on_btn_next_pressed"]
+[connection signal="pressed" from="UI/PauseDialog/Content/BtnResume" to="." method="_on_btn_resume_pressed"]
+[connection signal="pressed" from="UI/PauseDialog/Content/BtnQuit" to="." method="_on_btn_quit_pressed"]

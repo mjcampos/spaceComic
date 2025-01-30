@@ -36,7 +36,7 @@ func _ready() -> void:
 	tone_index = 0
 
 
-func _process(delta):
+func _process(_delta):
 	if is_current:
 		if Input.is_action_just_pressed("decision_up"):
 			_on_btn_up_pressed()

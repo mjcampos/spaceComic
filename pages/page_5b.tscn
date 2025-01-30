@@ -1,6 +1,6 @@
 [gd_scene load_steps=57 format=3 uid="uid://cyebkoxl2axg6"]
 
-[ext_resource type="Script" path="res://pages/page_5b.gd" id="1_fs5pb"]
+[ext_resource type="Script" path="res://pages/page.gd" id="1_8nj52"]
 [ext_resource type="Texture2D" uid="uid://cyseb35v0584o" path="res://assets/panels/bunker_bad/Storyboards/Bad Bunker Storyboard 2_B.png" id="3_7gt2q"]
 [ext_resource type="Texture2D" uid="uid://c313k31k8w01l" path="res://assets/panels/bunker_bad/Storyboards/Bad Bunker Storyboard 2_G.png" id="4_8feqq"]
 [ext_resource type="Texture2D" uid="uid://cnarj2ux4v06t" path="res://assets/panels/bunker_bad/Storyboards/Bad Bunker Storyboard 2_N.png" id="5_mxfs7"]
@@ -60,7 +60,7 @@
 [node name="Page5B" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_fs5pb")
+script = ExtResource("1_8nj52")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
