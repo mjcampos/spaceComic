@@ -26,7 +26,7 @@ func next_panel():
 		var this_element = page_elements[panel_index.x][panel_index.y]
 		if this_element in KEYWORDS:
 			match this_element:
-				"half", "back":
+				"half":
 					print("Panning camera...")
 					cam_pan_triggered.emit(this_element)
 					panel_index.y += 1
@@ -48,6 +48,8 @@ func _on_tween_finished():
 	if this_node.has_signal("decision_confirmed"):
 		this_node.is_current = true
 		paused = true
+	elif this_node is ColorRect:
+		cam_pan_triggered.emit("back")
 	panel_index.y += 1
 
 

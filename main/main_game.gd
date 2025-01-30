@@ -2,7 +2,7 @@ extends Control
 
 @onready var page_list = $Pages.get_children()
 
-var page_index : int = 2
+var page_index : int = 4
 var p3_choice : int = 0
 var p4_choice : int = 0
 
@@ -13,30 +13,28 @@ func _ready() -> void:
 		var this_page = page_list[i]
 		this_page.page_elements = page_data[i]
 		this_page.init_page()
-		this_page.modulate = Color(1, 1, 1, 0)
+		this_page.hide()
 		this_page.cam_pan_triggered.connect(pan_camera)
 		this_page.page_ended.connect(next_page)
-	page_list[page_index].modulate = Color(1,1,1,1)
+	page_list[page_index].show()
 
 
 func pan_camera(type):
-	var cam_tween = create_tween()
 	match type:
 		"half":
+			var cam_tween = create_tween()
 			cam_tween.tween_property($Camera, "position", Vector2(960,0), 1.0)
+			cam_tween.play()
 		"back":
-			cam_tween.tween_property($Camera, "position", Vector2.ZERO, 1.0)
-	cam_tween.play()
+			$Camera.position = Vector2.ZERO
 
 
 func next_page():
 	if page_index < page_list.size()-1 and !page_list[page_index].paused:
 		print("Moving to next page...")
-		var page_tween = create_tween()
-		page_tween.tween_property(page_list[page_index], "modulate", Color(1,1,1,0), 0.5)
-		page_tween.tween_property($Camera, "position", Vector2.ZERO, 0.1)
-		page_tween.tween_property(page_list[page_index+1], "modulate", Color(1,1,1,1), 0.5)
-		page_tween.play()
+		$Camera.position = Vector2.ZERO
+		page_list[page_index].hide()
+		page_list[page_index+1].show()
 		page_index += 1
 
 

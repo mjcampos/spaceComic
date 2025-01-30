@@ -101,7 +101,7 @@ position = Vector2(1424, 848)
 texture = ExtResource("12_exkre")
 
 [node name="T7" type="Sprite2D" parent="Panels"]
-position = Vector2(1832, 944)
+position = Vector2(1788, 905)
 texture = ExtResource("13_hdatp")
 
 [node name="PennyPortraitFrame" type="Sprite2D" parent="Panels"]

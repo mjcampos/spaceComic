@@ -42,15 +42,14 @@ texture = ExtResource("1_h4mup")
 position = Vector2(688, 296)
 texture = ExtResource("2_k1a4c")
 
-[node name="P3" type="Sprite2D" parent="Panels"]
-z_index = 1
-position = Vector2(324, 778)
-texture = ExtResource("3_66xom")
-
 [node name="P4" type="Sprite2D" parent="Panels"]
 position = Vector2(424, 776)
 scale = Vector2(0.597656, 0.597656)
 texture = ExtResource("4_gkwkk")
+
+[node name="P3" type="Sprite2D" parent="Panels"]
+position = Vector2(324, 778)
+texture = ExtResource("3_66xom")
 
 [node name="P5" type="Sprite2D" parent="Panels"]
 position = Vector2(760, 784)
