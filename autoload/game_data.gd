@@ -52,12 +52,6 @@ const PAGE_3 = [
 		"Decision",
 	],
 	[
-		"MilitaryInstructorB6",
-		"MilitaryInstructorB7",
-		"MilitaryInstructorB8",
-		"end",
-	],
-	[
 		"MilitaryInstructorG6",
 		"MilitaryInstructorG7",
 		"MilitaryInstructorG8",
@@ -65,6 +59,12 @@ const PAGE_3 = [
 	],
 	[
 		"MilitaryInstructorN6",
+		"end",
+	],
+	[
+		"MilitaryInstructorB6",
+		"MilitaryInstructorB7",
+		"MilitaryInstructorB8",
 		"end",
 	],
 ]
@@ -317,8 +317,8 @@ const AUDIO_END = []
 
 
 func get_page_data():
-	return [PAGE_1, PAGE_2, PAGE_3, PAGE_4B, PAGE_4G, PAGE_4N, PAGE_5B, PAGE_5G, PAGE_5N, PAGE_END]
+	return [PAGE_1, PAGE_2, PAGE_3, PAGE_4G, PAGE_4N, PAGE_4B, PAGE_5G, PAGE_5N, PAGE_5B, PAGE_END]
 
 
 func get_audio_data():
-	return [AUDIO_1, AUDIO_2, AUDIO_3, AUDIO_4B, AUDIO_4G, AUDIO_4N, AUDIO_5B, AUDIO_5G, AUDIO_5N, AUDIO_END]
+	return [AUDIO_1, AUDIO_2, AUDIO_3, AUDIO_4G, AUDIO_4N, AUDIO_4B, AUDIO_5G, AUDIO_5N, AUDIO_5B, AUDIO_END]

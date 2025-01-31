@@ -3,7 +3,7 @@ extends Control
 
 @export var word_list : Array[String] = []
 @export var tone_list : Array[Texture] = []
-@export var audio_list : Array[String] = []
+@export var audio_list : Array[String] = ["vo_good", "vo_neutral", "vo_bad"]
 
 var is_current : bool = false : set = set_current
 var word_index : int = 0 : set = set_word
@@ -53,7 +53,9 @@ func _process(_delta):
 
 
 func confirm_decision():
-	decision_confirmed.emit(word_index, "%s%d" % [audio_list[word_index], tone_index])
+	var audio_cue = audio_list[word_index]
+	print("Audio cue: %s" % audio_cue)
+	decision_confirmed.emit(word_index, "%s%d" % [audio_cue, tone_index])
 	is_current = false
 
 
@@ -68,10 +70,8 @@ func _on_btn_down_pressed():
 func _on_btn_left_pressed():
 	word_index -= 1
 	AudioManager.play_audio("ui_boop_left")
-	#AudioManager.sfx_uitone_boop_left.play()
 
 
 func _on_btn_right_pressed():
 	word_index += 1
 	AudioManager.play_audio("ui_boop_right")
-	#AudioManager.sfx_uitone_boop_right.play()

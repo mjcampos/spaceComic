@@ -16,7 +16,7 @@ const POINT_VALS = {
 
 @onready var page_list = $Pages.get_children()
 
-var page_index : int = 4
+var page_index : int = 2
 var ending_points : int = 0
 var p3_choice : int = 0
 var p4_choice : int = 0
@@ -53,8 +53,8 @@ func next_page():
 			ending_points += POINT_VALS[page_index][choice]
 		if page_index in STORY_PATHS.keys():
 			var choice = page_list[page_index].choice
-			var next_page = STORY_PATHS[page_index][choice]
-			page_index = next_page
+			var next = STORY_PATHS[page_index][choice]
+			page_index = next
 		else:
 			page_index += 1
 		# Set ending based on ending_points

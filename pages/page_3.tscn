@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://b2vbhpb05xjvu"]
+[gd_scene load_steps=17 format=3 uid="uid://b2vbhpb05xjvu"]
 
 [ext_resource type="Texture2D" uid="uid://d4g3bwvc1choh" path="res://assets/panels/mil_instructor/MilitaryInstructor_1.png" id="1_3ru1v"]
 [ext_resource type="Script" path="res://pages/page.gd" id="1_sppju"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://bxwebjjqvvcr3" path="res://assets/panels/mil_instructor/MilitaryInstructor_G_6.png" id="10_8dh8x"]
 [ext_resource type="Texture2D" uid="uid://bj3rcq12k6tgp" path="res://ui/textures/normal_bub.png" id="10_t63q2"]
 [ext_resource type="Texture2D" uid="uid://bg0r73xeykf4r" path="res://assets/panels/mil_instructor/MilitaryInstructor_G_7.png" id="11_2678i"]
-[ext_resource type="Texture2D" uid="uid://bcxvqgnuck6c0" path="res://ui/textures/yell_bub.png" id="11_rci6l"]
 [ext_resource type="Texture2D" uid="uid://bduvn48025shf" path="res://assets/panels/mil_instructor/MilitaryInstructor_G_8.png" id="12_tub5r"]
 [ext_resource type="Texture2D" uid="uid://ct0ct2y1tfc33" path="res://assets/panels/mil_instructor/MilitaryInstructor_N_6.png" id="14_0u4yx"]
 
@@ -72,8 +71,8 @@ offset_left = 1540.0
 offset_top = 342.0
 offset_right = 1540.0
 offset_bottom = 342.0
-word_list = Array[String](["Fight until either you or the enemy can no longer fight!", "Stampede, stampede, then... action?", "...I'm sorry sir, I wasn't paying attention."])
-tone_list = Array[Texture]([ExtResource("10_t63q2"), ExtResource("11_rci6l")])
+word_list = Array[String](["Stampede, stampede, then... action?", "...I'm sorry sir, I wasn't paying attention.", "Fight until either you or the enemy can no longer fight!"])
+tone_list = Array[Texture]([ExtResource("10_t63q2")])
 
 [node name="MilitaryInstructorB6" type="Sprite2D" parent="."]
 position = Vector2(1144, 614)
