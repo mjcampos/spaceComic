@@ -1,8 +1,23 @@
 extends Control
 
+# Key: [page_index]:[good, neutral, bad]
+const STORY_PATHS = {
+	2:[3, 4, 5],
+	3:[6, 7, 8],
+	4:[6, 7, 8],
+	5:[8],
+}
+const POINT_VALS = {
+	2:[1, 0, -1],
+	3:[1, 0, -1],
+	4:[1, 0, -1],
+	8:[3, 0, -3],
+}
+
 @onready var page_list = $Pages.get_children()
 
 var page_index : int = 4
+var ending_points : int = 0
 var p3_choice : int = 0
 var p4_choice : int = 0
 
@@ -32,10 +47,26 @@ func pan_camera(type):
 func next_page():
 	if page_index < page_list.size()-1 and !page_list[page_index].paused:
 		print("Moving to next page...")
-		$Camera.position = Vector2.ZERO
 		page_list[page_index].hide()
-		page_list[page_index+1].show()
-		page_index += 1
+		if page_index in POINT_VALS.keys():
+			var choice = page_list[page_index].choice
+			ending_points += POINT_VALS[page_index][choice]
+		if page_index in STORY_PATHS.keys():
+			var choice = page_list[page_index].choice
+			var next_page = STORY_PATHS[page_index][choice]
+			page_index = next_page
+		else:
+			page_index += 1
+		# Set ending based on ending_points
+		if page_index == page_list.size()-1:
+			if ending_points >= 2:
+				page_list[page_index].panel_index.x = 0
+			elif ending_points <= -2:
+				page_list[page_index].panel_index.x = 2
+			else:
+				page_list[page_index].panel_index.x = 1
+		$Camera.position = Vector2.ZERO
+		page_list[page_index].show()
 
 
 func play_panel_audio(audio):

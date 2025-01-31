@@ -5,6 +5,8 @@ const KEYWORDS = ["half", "back", "end"]
 var page_elements : Array = []
 var panel_index : Vector2 = Vector2.ZERO
 var paused : bool = false
+# Key: [BAD, NEUTRAL, GOOD] == [0, 1, 2]
+var choice : int = 0
 
 signal cam_pan_triggered
 signal page_ended
@@ -53,8 +55,10 @@ func _on_tween_finished():
 	panel_index.y += 1
 
 
-func _on_decision_confirmed(index):
+func _on_decision_confirmed(index, audio):
+	#AudioManager.play_audio(audio)
 	paused = false
+	choice = index
 	panel_index.x = index + 1
 	panel_index.y = 0
 	next_panel()

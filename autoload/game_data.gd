@@ -274,10 +274,19 @@ const PAGE_5N = [
 	]
 ]
 
-const ENDING = [
-
+const PAGE_END = [
+	[
+		"GoodEndingIsolated"
+	], 
+	[
+		"NeutralEndingIsolated"
+	],
+	[
+		"BadEndingIsolated"
+	],
 ]
 
+const AUDIO_1 = []
 const AUDIO_2 = [
 	"null",
 	"sfx_cloth_rustle1",
@@ -297,6 +306,19 @@ const AUDIO_2 = [
 	"null",
 	"null",
 ]
+const AUDIO_3 = []
+const AUDIO_4B = []
+const AUDIO_4G = []
+const AUDIO_4N = []
+const AUDIO_5B = []
+const AUDIO_5G = []
+const AUDIO_5N = []
+const AUDIO_END = []
+
 
 func get_page_data():
-	return [PAGE_1, PAGE_2, PAGE_3, PAGE_4B, PAGE_4G, PAGE_4N, PAGE_5B, PAGE_5G, PAGE_5N, ENDING]
+	return [PAGE_1, PAGE_2, PAGE_3, PAGE_4B, PAGE_4G, PAGE_4N, PAGE_5B, PAGE_5G, PAGE_5N, PAGE_END]
+
+
+func get_audio_data():
+	return [AUDIO_1, AUDIO_2, AUDIO_3, AUDIO_4B, AUDIO_4G, AUDIO_4N, AUDIO_5B, AUDIO_5G, AUDIO_5N, AUDIO_END]

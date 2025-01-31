@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cyebkoxl2axg6" path="res://pages/page_5b.tscn" id="9_r4wyd"]
 [ext_resource type="PackedScene" uid="uid://btwoeqcqlhljs" path="res://pages/page_5g.tscn" id="10_874i6"]
 [ext_resource type="PackedScene" uid="uid://2ivfvfy7wnba" path="res://pages/page_5n.tscn" id="11_bgsl0"]
-[ext_resource type="PackedScene" uid="uid://d1j53k6p7wqf5" path="res://pages/ending.tscn" id="12_f02wo"]
+[ext_resource type="PackedScene" uid="uid://d1j53k6p7wqf5" path="res://pages/page_end.tscn" id="12_f02wo"]
 
 [node name="MainGame" type="Control"]
 layout_mode = 3
@@ -111,20 +111,20 @@ layout_mode = 1
 [node name="Page3" parent="Pages" instance=ExtResource("5_saawf")]
 layout_mode = 1
 
-[node name="Page4B" parent="Pages" instance=ExtResource("6_k466t")]
-layout_mode = 1
-
 [node name="Page4G" parent="Pages" instance=ExtResource("7_q23gd")]
 layout_mode = 1
 
 [node name="Page4N" parent="Pages" instance=ExtResource("8_pmk08")]
 layout_mode = 1
 
-[node name="Page5B" parent="Pages" instance=ExtResource("9_r4wyd")]
+[node name="Page4B" parent="Pages" instance=ExtResource("6_k466t")]
+layout_mode = 1
 
 [node name="Page5G" parent="Pages" instance=ExtResource("10_874i6")]
 
 [node name="Page5N" parent="Pages" instance=ExtResource("11_bgsl0")]
+
+[node name="Page5B" parent="Pages" instance=ExtResource("9_r4wyd")]
 
 [node name="Ending" parent="Pages" instance=ExtResource("12_f02wo")]
 layout_mode = 1

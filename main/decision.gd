@@ -2,12 +2,14 @@ extends Control
 
 
 @export var word_list : Array[String] = []
-@export var tone_list : Array[Texture]
+@export var tone_list : Array[Texture] = []
+@export var audio_list : Array[String] = []
+
 var is_current : bool = false : set = set_current
 var word_index : int = 0 : set = set_word
 var tone_index : int = 0 : set = set_tone
 
-signal decision_confirmed(index)
+signal decision_confirmed(index, points, audio)
 
 
 func set_current(val : bool):
@@ -51,7 +53,7 @@ func _process(_delta):
 
 
 func confirm_decision():
-	decision_confirmed.emit(word_index)
+	decision_confirmed.emit(word_index, "%s%d" % [audio_list[word_index], tone_index])
 	is_current = false
 
 

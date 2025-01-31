@@ -1,6 +1,5 @@
 extends Node
 
-
 # file_string is [prefix]_[filename]
 func play_audio(file_string : String):
 	var prefix = file_string.get_slice("_", 0)
