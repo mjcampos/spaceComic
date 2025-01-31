@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://xqts4upfea1e"]
+[gd_scene load_steps=11 format=3 uid="uid://xqts4upfea1e"]
 
 [ext_resource type="Script" path="res://pages/page.gd" id="1_l148x"]
 [ext_resource type="Texture2D" uid="uid://bnf1byh1w3rkl" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_1.png" id="2_pj0bo"]
@@ -7,7 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dmrkes2kex376" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_4.png" id="5_afeuw"]
 [ext_resource type="Texture2D" uid="uid://duprx413q4ckh" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_5.png" id="6_qfofc"]
 [ext_resource type="Texture2D" uid="uid://cafmwapda32qu" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_6.png" id="7_14yvn"]
+[ext_resource type="Texture2D" uid="uid://dcjm66qfts5l4" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_G_7.png" id="8_5isk4"]
 [ext_resource type="Texture2D" uid="uid://gi3l0l08dqma" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_B_7.png" id="8_gni8r"]
+[ext_resource type="Texture2D" uid="uid://cekb0u5hpok80" path="res://assets/panels/cafeteria_neutral/NeutralCafeteria_N_7.png" id="9_dibdi"]
 
 [node name="Page4N" type="Control"]
 layout_mode = 3
@@ -70,6 +72,14 @@ color = Color(0, 0, 0, 1)
 [node name="NeutralCafeteria6" type="Sprite2D" parent="Panels"]
 position = Vector2(508, 539)
 texture = ExtResource("7_14yvn")
+
+[node name="NeutralCafeteriaG7" type="Sprite2D" parent="Panels"]
+position = Vector2(1500, 533)
+texture = ExtResource("8_5isk4")
+
+[node name="NeutralCafeteriaN7" type="Sprite2D" parent="Panels"]
+position = Vector2(1500, 533)
+texture = ExtResource("9_dibdi")
 
 [node name="NeutralCafeteriaB7" type="Sprite2D" parent="Panels"]
 position = Vector2(1500, 533)

@@ -6,6 +6,8 @@ const STORY_PATHS = {
 	3:[6, 7, 8],
 	4:[6, 7, 8],
 	5:[8],
+	6:[9],
+	7:[9],
 }
 const POINT_VALS = {
 	2:[1, 0, -1],
@@ -16,7 +18,7 @@ const POINT_VALS = {
 
 @onready var page_list = $Pages.get_children()
 
-var page_index : int = 2
+var page_index : int = 0
 var ending_points : int = 0
 var p3_choice : int = 0
 var p4_choice : int = 0

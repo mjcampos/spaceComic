@@ -101,7 +101,33 @@ const PAGE_4G = [
 		"Panels/GoodCafeteria3",
 		"Panels/GoodCafeteria4",
 		"Panels/GoodCafeteria4Text1",
-		"Panels/GoodCafeteria4Db",
+		"Panels/Decision",
+	],
+	[
+		"half",
+		"Panels/GoodCafeteriaG5",
+		"Panels/GoodCafeteria5Text1",
+		"Panels/GoodCafeteria6",
+		"Panels/GoodCafeteria6Text1",
+		"Panels/GoodCafeteria6Text2",
+		"Panels/GoodCafeteria7",
+		"Panels/GoodCafeteria8",
+		"Panels/GoodCafeteria8Text1",
+		"end",
+	],
+	[
+		"half",
+		"Panels/GoodCafeteriaN5",
+		"Panels/GoodCafeteria5Text1",
+		"Panels/GoodCafeteria6",
+		"Panels/GoodCafeteria6Text1",
+		"Panels/GoodCafeteria6Text2",
+		"Panels/GoodCafeteria7",
+		"Panels/GoodCafeteria8",
+		"Panels/GoodCafeteria8Text1",
+		"end",
+	],
+	[
 		"half",
 		"Panels/GoodCafeteriaB5",
 		"Panels/GoodCafeteria5Text1",
@@ -110,8 +136,9 @@ const PAGE_4G = [
 		"Panels/GoodCafeteria6Text2",
 		"Panels/GoodCafeteria7",
 		"Panels/GoodCafeteria8",
+		"Panels/GoodCafeteria8Text1",
 		"end",
-	]
+	],
 ]
 
 const PAGE_4N = [
