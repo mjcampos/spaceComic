@@ -15,8 +15,8 @@ signal page_ended
 func init_page():
 	for path in page_elements:
 		for element in path:
-			if !(element in KEYWORDS):
-				var this_node = get_node(element)
+			if !(element[0] in KEYWORDS):
+				var this_node = get_node(element[0])
 				this_node.modulate = Color(1, 1, 1, 0)
 				if this_node.has_signal("decision_confirmed"):
 					print("Linking decision node")
@@ -26,27 +26,29 @@ func init_page():
 func next_panel():
 	if !paused:
 		var this_element = page_elements[panel_index.x][panel_index.y]
-		if this_element in KEYWORDS:
-			match this_element:
+		if this_element[0] in KEYWORDS:
+			match this_element[0]:
 				"half":
 					print("Panning camera...")
-					cam_pan_triggered.emit(this_element)
+					cam_pan_triggered.emit(this_element[0])
 					panel_index.y += 1
 				"end":
 					page_ended.emit()
 		else:
 			paused = true
-			var this_node = get_node(this_element)
+			var this_node = get_node(this_element[0])
 			print("Showing panel: %s" % this_node.name)
 			var panel_tween = create_tween()
 			panel_tween.tween_property(this_node, "modulate", Color(1,1,1,1), 0.5)
 			panel_tween.tween_callback(_on_tween_finished)
 			panel_tween.play()
+			if this_element[1] != "none":
+				AudioManager.play_audio(this_element[1])
 
 
 func _on_tween_finished():
 	paused = false
-	var this_node = get_node(page_elements[panel_index.x][panel_index.y])
+	var this_node = get_node(page_elements[panel_index.x][panel_index.y][0])
 	if this_node.has_signal("decision_confirmed"):
 		this_node.is_current = true
 		paused = true
@@ -56,7 +58,7 @@ func _on_tween_finished():
 
 
 func _on_decision_confirmed(index, audio):
-	#AudioManager.play_audio(audio)
+	AudioManager.play_audio(audio)
 	paused = false
 	choice = index
 	panel_index.x = index + 1

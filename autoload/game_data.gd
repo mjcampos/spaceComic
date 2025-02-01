@@ -18,6 +18,8 @@ const PAGE_1 = [
 		"end",
 	]
 ]
+const AUDIO_1 = []
+
 const PAGE_2 = [
 	[
 		"Panels/T1",
@@ -39,6 +41,26 @@ const PAGE_2 = [
 		"end",
 	]
 ]
+const AUDIO_2 = [
+	"null",
+	"sfx_cloth_rustle1",
+	"null",
+	"null",
+	"null",
+	"vo_penny_intro_idiot",
+	"half",
+	"null",
+	"null",
+	"vo_tris_gasppenny1",
+	"null",
+	"vo_penny_sigh3",
+	"null",
+	"vo_tris_umm1",
+	"vo_tris_umm2",
+	"null",
+	"null",
+]
+
 const PAGE_3 = [
 	[
 		"MilitaryInstructor1",
@@ -68,6 +90,7 @@ const PAGE_3 = [
 		"end",
 	],
 ]
+const AUDIO_3 = []
 
 const PAGE_4B = [
 	[
@@ -313,27 +336,6 @@ const PAGE_END = [
 	],
 ]
 
-const AUDIO_1 = []
-const AUDIO_2 = [
-	"null",
-	"sfx_cloth_rustle1",
-	"null",
-	"null",
-	"null",
-	"vo_penny_intro_idiot",
-	"half",
-	"null",
-	"null",
-	"vo_tris_gasppenny1",
-	"null",
-	"vo_penny_sigh3",
-	"null",
-	"vo_tris_umm1",
-	"vo_tris_umm2",
-	"null",
-	"null",
-]
-const AUDIO_3 = []
 const AUDIO_4B = []
 const AUDIO_4G = []
 const AUDIO_4N = []

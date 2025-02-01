@@ -1,0 +1,29 @@
+[
+	[
+		["MilitaryInstructor1", "vo_narrator_scene2_militaryinstructor"],
+		["MilitaryInstructor2", "none"],
+		["MilitaryInstructor3", "none"],
+		["MilitaryInstructor3Text1", "none"],
+		["half", "none"],
+		["MilitaryInstructor4", "none"],
+		["MilitaryInstructor4Text1", "vo_instructor_repeatsap"],
+		["MilitaryInstructor5", "none"],
+		["Decision", "none"],
+	],
+	[
+		["MilitaryInstructorG6", "none"],
+		["MilitaryInstructorG7", "none"],
+		["MilitaryInstructorG8", "none"],
+		["end", "none"],
+	],
+	[
+		["MilitaryInstructorN6", "none"],
+		["end", "none"],
+	],
+	[
+		["MilitaryInstructorB6", "none"],
+		["MilitaryInstructorB7", "none"],
+		["MilitaryInstructorB8", "none"],
+		["end", "none"],
+	],
+]

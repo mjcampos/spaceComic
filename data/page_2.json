@@ -1,0 +1,21 @@
+[
+	[
+		["Panels/T1", "none"],
+		["Panels/P1", "sfx_clothrustle_1"],
+		["Panels/T2", "none"],
+		["Panels/P2", "none"],
+		["Panels/P3", "none"],
+		["Panels/C1", "vo_penelope_opening_idiot"],
+		["half", "none"],
+		["Panels/P4", "none"],
+		["Panels/P5", "none"],
+		["Panels/T4", "vo_trista_gasppenny_1"],
+		["Panels/P6", "none"],
+		["Panels/T5", "vo_penelope_sigh_1"],
+		["Panels/P8", "none"],
+		["Panels/T6", "vo_trista_umm_1"],
+		["Panels/T7", "vo_trista_umm_2"],
+		["Panels/PennyPortraitFrame", "none"],
+		["end", "none"],
+	]
+]

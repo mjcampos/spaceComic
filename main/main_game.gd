@@ -1,5 +1,11 @@
 extends Control
 
+const PAGES = [
+	"page_1","page_2","page_3",
+	"page_4g","page_4n","page_4b",
+	"page_5g","page_5n","page_5b",
+	"page_end",
+]
 # Key: [page_index]:[good, neutral, bad]
 const STORY_PATHS = {
 	2:[3, 4, 5],
@@ -20,15 +26,15 @@ const POINT_VALS = {
 
 var page_index : int = 0
 var ending_points : int = 0
-var p3_choice : int = 0
-var p4_choice : int = 0
 
 
 func _ready() -> void:
-	var page_data = GameData.get_page_data()
+	#var page_data = GameData.get_page_data()
 	for i in page_list.size():
 		var this_page = page_list[i]
-		this_page.page_elements = page_data[i]
+		var file_data = FileAccess.open("res://data/%s.json" % PAGES[i], FileAccess.READ)
+		var data_string = file_data.get_as_text()
+		this_page.page_elements = JSON.parse_string(data_string)
 		this_page.init_page()
 		this_page.hide()
 		this_page.cam_pan_triggered.connect(pan_camera)

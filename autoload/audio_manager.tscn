@@ -166,7 +166,6 @@ max_polyphony = 4
 bus = &"SFX"
 
 [node name="PlayerVO" type="AudioStreamPlayer" parent="."]
-max_polyphony = 4
 bus = &"Voice"
 
 [node name="ResMusic" type="ResourcePreloader" parent="."]

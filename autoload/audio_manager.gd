@@ -1,6 +1,7 @@
 extends Node
 
 func play_audio(resource_name : String):
+	print(resource_name)
 	var prefix = resource_name.get_slice("_", 0)
 	match prefix:
 		"music":
